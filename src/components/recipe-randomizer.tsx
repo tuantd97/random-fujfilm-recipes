@@ -15,27 +15,79 @@ import {
 } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import {
+  findScene,
   groupSettings,
   pickRandom,
   recipes,
+  recipesInScene,
+  scenes,
   settingsToText,
   type Recipe,
 } from "@/lib/recipes";
 
-export function RecipeRandomizer({ initialSlug }: { initialSlug: string }) {
+function FilterChip({
+  active,
+  onClick,
+  children,
+}: {
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <Button
+      role="radio"
+      aria-checked={active}
+      size="sm"
+      variant={active ? "default" : "outline"}
+      className="rounded-full"
+      onClick={onClick}
+    >
+      {children}
+    </Button>
+  );
+}
+
+function syncUrl(recipeSlug: string, sceneSlug?: string) {
+  const params = new URLSearchParams();
+  if (sceneSlug) params.set("scene", sceneSlug);
+  params.set("r", recipeSlug);
+  window.history.replaceState(null, "", `?${params}`);
+}
+
+export function RecipeRandomizer({
+  initialSlug,
+  initialScene,
+}: {
+  initialSlug: string;
+  initialScene?: string;
+}) {
   const [recipe, setRecipe] = useState<Recipe>(
     () => recipes.find((r) => r.slug === initialSlug) ?? recipes[0],
   );
+  const [scene, setScene] = useState<string | undefined>(initialScene);
   const [spin, setSpin] = useState(0);
   const [copied, setCopied] = useState(false);
 
-  const shuffle = useCallback(() => {
-    const next = pickRandom(recipe.slug);
+  const pool = recipesInScene(scene);
+  const activeScene = findScene(scene);
+
+  const show = useCallback((next: Recipe, sceneSlug?: string) => {
     setRecipe(next);
     setSpin((n) => n + 1);
     setCopied(false);
-    window.history.replaceState(null, "", `?r=${next.slug}`);
-  }, [recipe.slug]);
+    syncUrl(next.slug, sceneSlug);
+  }, []);
+
+  const shuffle = useCallback(() => {
+    show(pickRandom(recipesInScene(scene), recipe.slug), scene);
+  }, [show, scene, recipe.slug]);
+
+  function selectScene(sceneSlug?: string) {
+    setScene(sceneSlug);
+    // Picking a category draws straight from it so the result matches the filter.
+    show(pickRandom(recipesInScene(sceneSlug), recipe.slug), sceneSlug);
+  }
 
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {
@@ -62,13 +114,34 @@ export function RecipeRandomizer({ initialSlug }: { initialSlug: string }) {
 
   return (
     <div className="flex w-full flex-col items-center gap-6">
+      <div
+        role="radiogroup"
+        aria-label="Lọc theo điều kiện chụp"
+        className="flex flex-wrap justify-center gap-2"
+      >
+        <FilterChip active={!scene} onClick={() => selectScene(undefined)}>
+          Tất cả <span className="opacity-60">{recipes.length}</span>
+        </FilterChip>
+        {scenes.map((s) => (
+          <FilterChip key={s.slug} active={scene === s.slug} onClick={() => selectScene(s.slug)}>
+            {s.name} <span className="opacity-60">{recipesInScene(s.slug).length}</span>
+          </FilterChip>
+        ))}
+      </div>
+
       <div className="flex flex-col items-center gap-2">
         <Button size="lg" className="h-11 px-6 text-base" onClick={shuffle}>
           <Shuffle className="size-5" />
           Random recipe
         </Button>
-        <p className="hidden text-xs text-muted-foreground sm:block">
-          or press <kbd className="rounded border bg-muted px-1.5 py-0.5 font-mono">Space</kbd>
+        <p className="text-center text-xs text-muted-foreground">
+          Random trong {pool.length} recipes
+          {activeScene ? ` · ${activeScene.name}` : ""}
+          <span className="hidden sm:inline">
+            {" "}
+            · hoặc nhấn{" "}
+            <kbd className="rounded border bg-muted px-1.5 py-0.5 font-mono">Space</kbd>
+          </span>
         </p>
       </div>
 

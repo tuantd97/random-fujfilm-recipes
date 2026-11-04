@@ -9,6 +9,10 @@
       "Everyday",
       "Daylight"
     ],
+    "categories": [
+      "golden-hour",
+      "travel"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -99,6 +103,9 @@
       "Skin tones",
       "Pastel"
     ],
+    "categories": [
+      "portraits"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -185,6 +192,11 @@
       "Golden hour",
       "Daylight",
       "Warm tones"
+    ],
+    "categories": [
+      "portraits",
+      "golden-hour",
+      "travel"
     ],
     "settings": [
       {
@@ -276,6 +288,10 @@
       "Documentary",
       "Street"
     ],
+    "categories": [
+      "street-photography",
+      "travel"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -366,6 +382,12 @@
       "Golden hour",
       "Moody"
     ],
+    "categories": [
+      "street-photography",
+      "overcast",
+      "golden-hour",
+      "travel"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -454,6 +476,12 @@
       "Night",
       "Low light"
     ],
+    "categories": [
+      "night",
+      "street-photography",
+      "overcast",
+      "black-and-white"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -540,6 +568,10 @@
       "Everyday",
       "Street",
       "Daylight"
+    ],
+    "categories": [
+      "street-photography",
+      "golden-hour"
     ],
     "settings": [
       {
@@ -631,6 +663,10 @@
       "Skin tones",
       "Daylight"
     ],
+    "categories": [
+      "portraits",
+      "golden-hour"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -720,6 +756,11 @@
       "Black & white",
       "Documentary",
       "Street"
+    ],
+    "categories": [
+      "street-photography",
+      "black-and-white",
+      "travel"
     ],
     "settings": [
       {
@@ -811,6 +852,11 @@
       "Daylight",
       "Skin tones"
     ],
+    "categories": [
+      "portraits",
+      "cinematic",
+      "travel"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -900,6 +946,12 @@
       "Cinematic",
       "Night",
       "Neon & city lights"
+    ],
+    "categories": [
+      "night",
+      "street-photography",
+      "overcast",
+      "cinematic"
     ],
     "settings": [
       {
@@ -991,6 +1043,11 @@
       "Low light",
       "Warm tones"
     ],
+    "categories": [
+      "night",
+      "street-photography",
+      "golden-hour"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -1081,6 +1138,11 @@
       "Pastel",
       "Portraits"
     ],
+    "categories": [
+      "portraits",
+      "golden-hour",
+      "travel"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -1164,6 +1226,9 @@
       "Daylight",
       "Vivid color",
       "Midday sun"
+    ],
+    "categories": [
+      "travel"
     ],
     "settings": [
       {
@@ -1249,6 +1314,10 @@
       "Vivid color",
       "Daylight",
       "Golden hour"
+    ],
+    "categories": [
+      "golden-hour",
+      "travel"
     ],
     "settings": [
       {
@@ -1339,6 +1408,11 @@
       "Skin tones",
       "Indoor portraits"
     ],
+    "categories": [
+      "portraits",
+      "overcast",
+      "golden-hour"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -1426,6 +1500,12 @@
       "Golden hour",
       "Portraits",
       "Street"
+    ],
+    "categories": [
+      "street-photography",
+      "portraits",
+      "golden-hour",
+      "cinematic"
     ],
     "settings": [
       {
@@ -1517,6 +1597,12 @@
       "Moody",
       "Night"
     ],
+    "categories": [
+      "night",
+      "street-photography",
+      "overcast",
+      "cinematic"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -1604,6 +1690,10 @@
       "Everyday",
       "Street",
       "Documentary"
+    ],
+    "categories": [
+      "street-photography",
+      "travel"
     ],
     "settings": [
       {
@@ -1695,6 +1785,12 @@
       "Overcast",
       "Documentary"
     ],
+    "categories": [
+      "street-photography",
+      "portraits",
+      "overcast",
+      "black-and-white"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -1784,6 +1880,10 @@
       "Travel",
       "Architecture",
       "Daylight"
+    ],
+    "categories": [
+      "street-photography",
+      "travel"
     ],
     "settings": [
       {
@@ -1875,6 +1975,12 @@
       "Low light",
       "Night"
     ],
+    "categories": [
+      "night",
+      "portraits",
+      "golden-hour",
+      "cinematic"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -1964,6 +2070,9 @@
       "Portraits",
       "Skin tones",
       "Daylight"
+    ],
+    "categories": [
+      "portraits"
     ],
     "settings": [
       {
@@ -2055,6 +2164,9 @@
       "Vivid color",
       "Daylight"
     ],
+    "categories": [
+      "travel"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -2142,6 +2254,11 @@
       "Black & white",
       "Documentary",
       "Portraits"
+    ],
+    "categories": [
+      "street-photography",
+      "portraits",
+      "black-and-white"
     ],
     "settings": [
       {
@@ -2233,6 +2350,11 @@
       "Warm tones",
       "Portraits"
     ],
+    "categories": [
+      "street-photography",
+      "portraits",
+      "golden-hour"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -2316,6 +2438,10 @@
       "Portraits",
       "Skin tones",
       "Pastel"
+    ],
+    "categories": [
+      "portraits",
+      "overcast"
     ],
     "settings": [
       {
@@ -2404,6 +2530,10 @@
       "Portraits",
       "Skin tones",
       "Indoor portraits"
+    ],
+    "categories": [
+      "street-photography",
+      "portraits"
     ],
     "settings": [
       {
@@ -2495,6 +2625,11 @@
       "Everyday",
       "Skin tones"
     ],
+    "categories": [
+      "street-photography",
+      "portraits",
+      "travel"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -2578,6 +2713,10 @@
       "Golden hour",
       "Daylight",
       "Vivid color"
+    ],
+    "categories": [
+      "golden-hour",
+      "travel"
     ],
     "settings": [
       {
@@ -2668,6 +2807,12 @@
       "Black & white",
       "Documentary"
     ],
+    "categories": [
+      "street-photography",
+      "overcast",
+      "black-and-white",
+      "travel"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -2756,6 +2901,11 @@
       "Overcast",
       "Street",
       "Travel"
+    ],
+    "categories": [
+      "street-photography",
+      "overcast",
+      "travel"
     ],
     "settings": [
       {
@@ -2847,6 +2997,13 @@
       "Street",
       "Cinematic"
     ],
+    "categories": [
+      "street-photography",
+      "portraits",
+      "overcast",
+      "cinematic",
+      "travel"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -2937,6 +3094,11 @@
       "Travel",
       "Golden hour"
     ],
+    "categories": [
+      "portraits",
+      "golden-hour",
+      "travel"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -3023,6 +3185,10 @@
       "Everyday",
       "Portraits",
       "Skin tones"
+    ],
+    "categories": [
+      "portraits",
+      "travel"
     ],
     "settings": [
       {
@@ -3114,6 +3280,12 @@
       "Cinematic",
       "Travel"
     ],
+    "categories": [
+      "portraits",
+      "overcast",
+      "cinematic",
+      "travel"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -3196,6 +3368,11 @@
       "Night",
       "Neon & city lights",
       "Low light"
+    ],
+    "categories": [
+      "night",
+      "street-photography",
+      "cinematic"
     ],
     "settings": [
       {
@@ -3288,6 +3465,9 @@
       "Travel",
       "Vivid color"
     ],
+    "categories": [
+      "travel"
+    ],
     "settings": [
       {
         "name": "Film Simulation",
@@ -3378,6 +3558,11 @@
       "Portraits",
       "Golden hour",
       "Warm tones"
+    ],
+    "categories": [
+      "portraits",
+      "golden-hour",
+      "travel"
     ],
     "settings": [
       {

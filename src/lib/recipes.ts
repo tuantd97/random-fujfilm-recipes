@@ -1,4 +1,5 @@
 import data from "@/data/recipes.json";
+import sceneData from "@/data/scenes.json";
 
 export type RecipeSetting = {
   name: string;
@@ -11,12 +12,29 @@ export type Recipe = {
   emulates: string;
   description: string;
   scenes: string[];
+  /** Slugs of the fujirecipes.io scene categories this recipe belongs to. */
+  categories: string[];
   settings: RecipeSetting[];
   cameras: string[];
   sourceUrl: string;
 };
 
+export type Scene = {
+  slug: string;
+  name: string;
+};
+
 export const recipes: Recipe[] = data;
+export const scenes: Scene[] = sceneData;
+
+export function findScene(slug: string | null | undefined) {
+  return slug ? scenes.find((s) => s.slug === slug) : undefined;
+}
+
+/** Recipes in a scene category, or every recipe when no scene is given. */
+export function recipesInScene(sceneSlug?: string) {
+  return sceneSlug ? recipes.filter((r) => r.categories.includes(sceneSlug)) : recipes;
+}
 
 const SETTING_GROUPS: { label: string; names: string[] }[] = [
   { label: "Base", names: ["Film Simulation", "Dynamic Range"] },
@@ -38,9 +56,8 @@ export function groupSettings(settings: RecipeSetting[]) {
   return groups.filter((g) => g.settings.length > 0);
 }
 
-export function pickRandom(excludeSlug?: string): Recipe {
-  const pool =
-    recipes.length > 1 ? recipes.filter((r) => r.slug !== excludeSlug) : recipes;
+export function pickRandom(from: Recipe[] = recipes, excludeSlug?: string): Recipe {
+  const pool = from.length > 1 ? from.filter((r) => r.slug !== excludeSlug) : from;
   return pool[Math.floor(Math.random() * pool.length)];
 }
 

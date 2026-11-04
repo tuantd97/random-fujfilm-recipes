@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "night",
+    "name": "Night & City Lights"
+  },
+  {
+    "slug": "street-photography",
+    "name": "Street Photography"
+  },
+  {
+    "slug": "portraits",
+    "name": "Portraits & Skin Tones"
+  },
+  {
+    "slug": "overcast",
+    "name": "Overcast & Grey Skies"
+  },
+  {
+    "slug": "black-and-white",
+    "name": "Black & White"
+  },
+  {
+    "slug": "golden-hour",
+    "name": "Golden Hour"
+  },
+  {
+    "slug": "cinematic",
+    "name": "Cinematic"
+  },
+  {
+    "slug": "travel",
+    "name": "Travel"
+  }
+]

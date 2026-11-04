@@ -4,6 +4,7 @@ import { writeFile, mkdir } from "node:fs/promises";
 
 const BASE = "https://fujirecipes.io";
 const OUT = new URL("../src/data/recipes.json", import.meta.url);
+const SCENES_OUT = new URL("../src/data/scenes.json", import.meta.url);
 
 const decode = (s) =>
   s
@@ -78,9 +79,34 @@ function parseDetail(html) {
   return { settings, cameras };
 }
 
+async function scrapeScenes() {
+  const html = await get("/scenes");
+  const slugs = [
+    ...new Set([...html.matchAll(/href="\/scenes\/([^"#?]+)"/g)].map((m) => m[1])),
+  ];
+  const scenes = [];
+  for (const slug of slugs) {
+    const page = await get(`/scenes/${slug}`);
+    const title = page.match(/<h1[^>]*>([\s\S]*?)<\/h1>/);
+    const recipes = [
+      ...new Set([...page.matchAll(/href="\/recipes\/([^"#?]+)"/g)].map((m) => m[1])),
+    ];
+    scenes.push({ slug, name: title ? decode(title[1]) : slug, recipes });
+    console.log(`  ✓ scene ${slug} (${recipes.length})`);
+    await new Promise((r) => setTimeout(r, 200));
+  }
+  return scenes;
+}
+
 async function main() {
   const index = parseIndex(await get("/recipes"));
   console.log(`Found ${index.length} recipes`);
+
+  const scenes = await scrapeScenes();
+  const known = new Set(index.map((r) => r.slug));
+  for (const scene of scenes) {
+    scene.recipes = scene.recipes.filter((slug) => known.has(slug));
+  }
 
   const recipes = [];
   for (const entry of index) {
@@ -90,6 +116,7 @@ async function main() {
     }
     recipes.push({
       ...entry,
+      categories: scenes.filter((s) => s.recipes.includes(entry.slug)).map((s) => s.slug),
       ...detail,
       sourceUrl: `${BASE}/recipes/${entry.slug}`,
     });
@@ -99,7 +126,17 @@ async function main() {
 
   await mkdir(new URL(".", OUT), { recursive: true });
   await writeFile(OUT, JSON.stringify(recipes, null, 2) + "\n");
-  console.log(`Wrote ${recipes.length} recipes to src/data/recipes.json`);
+  await writeFile(
+    SCENES_OUT,
+    JSON.stringify(
+      scenes.map(({ slug, name }) => ({ slug, name })),
+      null,
+      2,
+    ) + "\n",
+  );
+  console.log(
+    `Wrote ${recipes.length} recipes and ${scenes.length} scenes to src/data/`,
+  );
 }
 
 main().catch((err) => {

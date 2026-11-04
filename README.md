@@ -5,7 +5,8 @@ A web app that picks a random Fujifilm film simulation recipe. The data comes fr
 - Next.js 16 (App Router, TypeScript)
 - Tailwind CSS v4 + shadcn/ui
 - Light / Dark / System theme (next-themes)
-- Each recipe has its own shareable link: `/?r=<slug>`
+- Filter by shooting condition (the 8 scene categories from fujirecipes.io), then random within the filtered list
+- Each recipe has its own shareable link: `/?r=<slug>` (with a filter: `/?scene=<scene>&r=<slug>`)
 - Press `Space` or `R` to shuffle
 
 ## Requirements
@@ -55,7 +56,7 @@ npx shadcn@latest add <component>
 
 ## Refreshing the recipe data
 
-The data is stored statically in `src/data/recipes.json`. To fetch it again from fujirecipes.io:
+The data is stored statically in `src/data/recipes.json` and `src/data/scenes.json`. To fetch it again from fujirecipes.io:
 
 ```bash
 yarn scrape

@@ -4,15 +4,17 @@ import { connection } from "next/server";
 
 import { RecipeRandomizer } from "@/components/recipe-randomizer";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { pickRandom, recipes } from "@/lib/recipes";
+import { findScene, pickRandom, recipes, recipesInScene } from "@/lib/recipes";
 
 async function RandomRecipe({ searchParams }: { searchParams: PageProps<"/">["searchParams"] }) {
-  const { r } = await searchParams;
-  const requested = typeof r === "string" ? recipes.find((x) => x.slug === r) : undefined;
+  const { r, scene } = await searchParams;
+  const initialScene = findScene(typeof scene === "string" ? scene : undefined);
+  const pool = recipesInScene(initialScene?.slug);
+  const requested = typeof r === "string" ? pool.find((x) => x.slug === r) : undefined;
   // Random pick must happen per request, not at prerender time.
   await connection();
-  const initial = requested ?? pickRandom();
-  return <RecipeRandomizer initialSlug={initial.slug} />;
+  const initial = requested ?? pickRandom(pool);
+  return <RecipeRandomizer initialSlug={initial.slug} initialScene={initialScene?.slug} />;
 }
 
 function RecipeSkeleton() {
@@ -41,7 +43,8 @@ export default function Home({ searchParams }: PageProps<"/">) {
             Không biết chụp recipe nào?
           </h1>
           <p className="mt-2 text-muted-foreground">
-            Bốc ngẫu nhiên 1 trong {recipes.length} Fujifilm film simulation recipes.
+            Bốc ngẫu nhiên 1 trong {recipes.length} Fujifilm film simulation recipes, hoặc lọc
+            theo điều kiện chụp.
           </p>
         </div>
 
