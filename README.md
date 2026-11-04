@@ -7,6 +7,7 @@ A web app that picks a random Fujifilm film simulation recipe. The data comes fr
 - Light / Dark / System theme (next-themes)
 - Filter by shooting condition (the 8 scene categories from fujirecipes.io), then random within the filtered list
 - Each recipe has its own shareable link: `/?r=<slug>` (with a filter: `/?scene=<scene>&r=<slug>`)
+- Shooting tips in Vietnamese for every recipe (`src/data/tips.json`)
 - Press `Space` or `R` to shuffle
 
 ## Requirements
@@ -63,6 +64,8 @@ yarn scrape
 ```
 
 Then commit the updated `recipes.json`.
+
+The **Mẹo chụp** (shooting tips) section in `src/data/tips.json` is hand-written in our own words and isn't produced by the scraper. The Notes/FAQ articles on fujirecipes.io are the author's copyrighted content and aren't copied; the app only links to the original page. When a new recipe is added, add a matching entry to `tips.json` by its `slug` (the section is hidden if there isn't one).
 
 ## Deploying to Vercel (Hobby/free)
 

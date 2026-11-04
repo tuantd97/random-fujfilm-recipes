@@ -1,0 +1,353 @@
+{
+  "acros-street-documentary": {
+    "bestFor": "Phố trưa nắng gắt, tương phản mạnh, tường gạch, biển hiệu, mặt đường ướt.",
+    "tips": [
+      "Đo sáng theo vùng sáng, để EV âm giữ trung tông thấp và bóng đổ sâu.",
+      "Kính lọc R làm trời xanh tối lại, tách bầu trời khỏi toà nhà rõ hơn.",
+      "Clarity +3 tạo độ gắt ở viền mà không bị quầng như khi đẩy Sharpness."
+    ],
+    "avoid": "X-T3 không có Clarity nên không áp dụng nguyên bản được. Trên máy 40MP, hạt Large sẽ lộ rõ hơn."
+  },
+  "agfa-vista-200": {
+    "bestFor": "Ngày nắng thoáng hoặc trời sáng có mây, cảnh nhiều màu đỏ, sơn tường, đồ kim loại.",
+    "tips": [
+      "Hạt Strong/Large là cố ý, tạo cảm giác film rẻ tiền hơi sần.",
+      "Shift đỏ +4 được cân lại bằng xanh −3, nên da vẫn ấm chứ không cam.",
+      "Classic Negative cho tương phản giòn hơn hẳn Classic Chrome."
+    ],
+    "avoid": "Cần máy có Classic Negative (X-Trans IV/V), X-T3 không dùng được."
+  },
+  "astia-100f-slide-film": {
+    "bestFor": "Ánh sáng mềm, đều: bóng râm buổi sáng, chân dung trời âm u, cạnh cửa sổ.",
+    "tips": [
+      "DR200 + Shadow +1 giữ độ 'nảy' trung tông kiểu phim dương bản.",
+      "Highlight 0 để da sáng và nền pastel không cháy trắng.",
+      "Khác bản Astia Soft Portrait: bản này giữ tương phản hơn, không làm mịn da."
+    ],
+    "avoid": "Trên X-T3 bỏ dòng Clarity, các thông số còn lại giữ nguyên."
+  },
+  "astia-soft-skin-portrait": {
+    "bestFor": "Chân dung ở ánh sáng cửa sổ, phòng hướng bắc, bóng râm buổi chiều.",
+    "tips": [
+      "Clarity −3 là điểm chính: da mịn nhẹ như phủ phấn mà không bị nhựa.",
+      "Sharpness −2 vẫn giữ mi và tóc đủ nét để khuôn mặt có điểm tựa.",
+      "Đo sáng cho da; DR200 lo phần cửa sổ sáng phía sau."
+    ],
+    "avoid": "Không hợp nắng gắt giữa trưa vì ảnh sẽ bị bệt. X-T3 không có Clarity."
+  },
+  "cinestill-400d-daylight-cinema": {
+    "bestFor": "Ngày nắng và giờ vàng, chân dung ngoài trời.",
+    "tips": [
+      "Bù +1/3 đến +2/3 EV để mặt người sáng, mềm.",
+      "DR400 + Highlight −1 giữ trời và vùng da dính nắng không cháy.",
+      "Clarity −2, Sharpness −1 tạo lớp 'haze' nhẹ kiểu phim điện ảnh."
+    ],
+    "avoid": "Không tái tạo được quầng đỏ (halation) thật của CineStill. Ban đêm thì nên dùng 800T."
+  },
+  "cinestill-50d-fine-grain": {
+    "bestFor": "Ánh sáng bên giờ vàng, chân dung ngược sáng, chiều có sương mù nhẹ.",
+    "tips": [
+      "Phơi sáng dư một chút (+1/3 đến +2/3 EV) cho vùng sáng thoáng.",
+      "Hạt Weak/Small + NR −3 giữ chi tiết sạch, đặc trưng 50D.",
+      "Sạch và lạnh hơn bản 400D."
+    ],
+    "avoid": "X-T3 không có Clarity; nếu dùng thì bỏ dòng đó."
+  },
+  "cinestill-800t": {
+    "bestFor": "Phố đêm nhiều đèn: cửa hàng, biển neon, đèn xe, mặt đường ướt.",
+    "tips": [
+      "Phơi sáng theo vùng tối (0 đến +2/3 EV) để đèn được 'nở'.",
+      "Cảnh càng nhiều đèn nhân tạo thì sắc teal và cam càng tách bạch.",
+      "WB gần tungsten giữ đèn trung tính đến ấm, phần còn lại ngả lạnh."
+    ],
+    "avoid": "Ban ngày ảnh sẽ xanh lè, nên đổi sang recipe ấm hơn."
+  },
+  "classic-chrome-overcast-moody": {
+    "bestFor": "Trời âm u, ánh sáng phẳng, đi bộ chụp phố kiểu tài liệu.",
+    "tips": [
+      "Bù −2/3 đến −1/3 EV, nếu không máy sẽ kéo cảnh về xám trung tính và mất mood.",
+      "Shadow +2 / Highlight +1 cho màu đen đặc và bầu trời trầm.",
+      "Khoá WB Daylight để cả buổi chụp có cùng một tông lạnh."
+    ],
+    "avoid": "Tránh nắng gắt và giờ vàng, ánh sáng ấm sẽ trông nhợt. X-T3 không có Clarity."
+  },
+  "eterna-bleach-bypass-gritty-cinematic": {
+    "bestFor": "Cảnh phố gai góc, mặt đường ướt, kính cửa, cả ngày lẫn đêm.",
+    "tips": [
+      "Phơi sáng hơi thiếu (−2/3 đến −1/3 EV) để vùng sáng có ánh kim loại.",
+      "Color −2 đẩy màu về gần đơn sắc, kiểu phim giữ bạc.",
+      "Clarity +3 cắn vào chi tiết, hợp kết cấu thô."
+    ],
+    "avoid": "Không hợp chân dung nhẹ nhàng. Cần máy có giả lập Eterna Bleach Bypass."
+  },
+  "eterna-overcast-rain": {
+    "bestFor": "Ngày mưa, trời xám, phố ướt.",
+    "tips": [
+      "Bù +1/3 đến +2/3 EV vì trời xám dễ làm máy đo thiếu sáng.",
+      "ISO cao 1600–6400 vẫn ổn, hạt nhỏ còn giúp mặt đường ướt có chất.",
+      "Clarity −3 và NR −4 cho cảm giác điện ảnh hơn là sắc lạnh."
+    ],
+    "avoid": "X-T3 thiếu Clarity và Color Chrome FX Blue nên chỉ làm gần đúng được."
+  },
+  "fuji-superia-xtra-400": {
+    "bestFor": "Ban ngày từ phẳng đến sáng: bóng râm, trưa trời mây, phố có nắng.",
+    "tips": [
+      "Sắc lạnh: lá cây ngả teal, vùng tối hơi ánh tím hồng.",
+      "Hạt Strong/Large mô phỏng film 400 bình dân, nên để ISO tương đối thấp.",
+      "Lạnh hơn rõ rệt so với các recipe Kodak."
+    ],
+    "avoid": "Cần Classic Negative, X-T3 không dùng được."
+  },
+  "fujicolor-c200": {
+    "bestFor": "Ánh sáng ngày đều: trời âm u, bóng râm, phố buổi trưa.",
+    "tips": [
+      "Tông lạnh nhẹ, trông tự nhiên chứ không lạnh lẽo.",
+      "Color −1 vì C200 vốn không rực, lá cây giữ đúng màu.",
+      "Sạch hơn Superia: ít teal hơn, không có ánh tím ở vùng tối."
+    ],
+    "avoid": "Cần Classic Negative (X-Trans IV/V)."
+  },
+  "harman-phoenix-200-experimental": {
+    "bestFor": "Chụp hướng về cửa sổ sáng, mặt trời thấp, biển hiệu. Hợp ai thích ảnh 'thử nghiệm'.",
+    "tips": [
+      "Phơi sáng hơi thiếu (−1/3 đến 0 EV) và hướng máy về nguồn sáng để viền sáng loé.",
+      "Để ISO tự động tới 6400, ở recipe này hạt chính là nhân vật chính.",
+      "Bleach Bypass + Color +2 cho tương phản bạc mà vẫn giữ màu đỏ."
+    ],
+    "avoid": "Không dành cho ảnh cần sạch, chính xác. Cần máy có Eterna Bleach Bypass."
+  },
+  "ilford-delta-3200-night-bw": {
+    "bestFor": "Đen trắng trong phòng tối, sân khấu, quán bar, đêm.",
+    "tips": [
+      "ISO tự động tới 12800, tối càng sâu thì hạt càng dày, đúng chất Delta 3200.",
+      "Bù +1/3 đến +2/3 EV để mặt người không chìm vào bóng tối.",
+      "Sharpness −2 để hạt, chứ không phải độ nét, định hình bức ảnh."
+    ],
+    "avoid": "Không phải kiểu Tri-X tương phản gắt; màu đen ở đây được mở ra. Chạy được cả trên X-T3."
+  },
+  "ilford-hp5-plus-400-acros": {
+    "bestFor": "Đen trắng buổi sáng mát trời âm u, bóng râm, phố trời xám.",
+    "tips": [
+      "Shadow −2 mở vùng trung tông thấp vốn dễ bị đục khi ánh sáng phẳng.",
+      "Bù 0 đến +2/3 EV để da và mặt đường nằm ở vùng xám sáng.",
+      "Kính lọc vàng (Ye) tách trung tông nhẹ, da không bị phẳng."
+    ],
+    "avoid": "Muốn tương phản mạnh và hạt thô thì chọn recipe Tri-X. X-T3 không có Clarity."
+  },
+  "kodachrome-64": {
+    "bestFor": "Nắng trong, trời xanh, cảnh nhiều màu mạnh: cờ, tường sơn, chợ, phong cảnh.",
+    "tips": [
+      "Phơi sáng hơi thiếu (−1/3 đến 0 EV) để màu đặc, trời sâu.",
+      "Đây là recipe cho khung hình sáng và nhiều năng lượng.",
+      "Đỏ và xanh dương rực, tương phản giòn."
+    ],
+    "avoid": "Ánh sáng phẳng hoặc yếu thì chuyển sang recipe mềm hơn."
+  },
+  "kodak-colorplus-200": {
+    "bestFor": "Ảnh đời thường ban ngày: phố trời mây, chiều ngoại ô, chụp kỷ niệm.",
+    "tips": [
+      "Shadow −1 làm vùng đen hơi 'đục sữa' như film rẻ.",
+      "Bù +1/3 EV cho ảnh sáng, thoáng.",
+      "Ấm nhưng không vàng óng như Kodak Gold."
+    ],
+    "avoid": "X-T3 không có Classic Negative lẫn Clarity."
+  },
+  "kodak-ektachrome-e100-slide": {
+    "bestFor": "Ngày nắng, du lịch, kiến trúc, phong cảnh cần màu tách bạch.",
+    "tips": [
+      "Highlight −1 làm vùng sáng tắt dần mượt thay vì cháy đột ngột.",
+      "Shadow +1 giữ tương phản chặt kiểu phim dương bản.",
+      "Tắt grain vì E100 vốn hạt rất mịn."
+    ],
+    "avoid": "Trên X-T3 bỏ dòng Clarity, phần còn lại chạy bình thường."
+  },
+  "kodak-ektar-100": {
+    "bestFor": "Ánh sáng tốt: nắng trưa trong, trời sáng mây, buổi sáng đi du lịch.",
+    "tips": [
+      "Velvia làm nền vì Ektar khá rực; Color −2 kéo lại cho vừa.",
+      "Shift đỏ +2 làm ấm các tông đỏ như Ektar.",
+      "Phơi sáng hơi dè dặt để giữ trời và kiến trúc trắng."
+    ],
+    "avoid": "Không hợp chân dung cận vì da dễ đỏ. X-T3 bỏ dòng Clarity."
+  },
+  "kodak-gold-200": {
+    "bestFor": "Nắng chiều dịu, buổi sáng, trời có mây, chân dung và du lịch.",
+    "tips": [
+      "Bù +1/3 đến +2/3 EV vì Classic Negative hay bị thiếu sáng.",
+      "DR400 + Highlight −1 giữ trời và áo trắng.",
+      "WB Daylight cố định giữ tông vàng ấm đồng đều cả buổi."
+    ],
+    "avoid": "Nắng gắt giữa trưa không lý tưởng. X-T3 không dùng được."
+  },
+  "kodak-portra-160-pro-neg-std": {
+    "bestFor": "Ánh sáng đều, sáng: cửa sổ hướng bắc, trưa trời mây, đèn studio.",
+    "tips": [
+      "Highlight −1 / Shadow −1 làm da chuyển tông mượt.",
+      "Giữ ISO gần mức gốc cho da mịn, vùng tối sạch.",
+      "Màu trung tính hơi lạnh, nhẹ nhàng hơn Portra 400."
+    ],
+    "avoid": "Trên X-T3 bỏ Clarity −2, tương phản sẽ hơi cao hơn một chút."
+  },
+  "kodak-portra-400": {
+    "bestFor": "Ánh sáng mềm có hướng: bóng râm, trời mây, một giờ trước hoàng hôn.",
+    "tips": [
+      "Phơi sáng dư một chút (+1/3 đến +2/3 EV) cho da sáng, có hồn.",
+      "WB Daylight cố định giúp màu da ổn định giữa các tấm.",
+      "Ấm nhẹ, tương phản thấp, rất 'dễ chịu' với người."
+    ],
+    "avoid": "Tránh nắng gắt giữa trưa vì ảnh dễ bị đục. Cần Classic Negative."
+  },
+  "kodak-portra-800-low-light": {
+    "bestFor": "Chân dung trong nhà, phố lúc chạng vạng, bàn ăn nhà hàng.",
+    "tips": [
+      "Để ISO tự động tới 12800; DR400 cần từ ISO 640, cảnh tối sẽ tự đạt.",
+      "Bù quanh −1/3 đến +1/3 EV, giảm một chút khi có đèn sáng trong khung.",
+      "Ấm hơn và hạt dày hơn Portra 400."
+    ],
+    "avoid": "X-T3 không có Classic Negative."
+  },
+  "kodak-proimage-100": {
+    "bestFor": "Ánh sáng ngày dịu: chụp cưới, ảnh gia đình, chân dung ngoài trời.",
+    "tips": [
+      "Đo sáng cho da, DR200 lo nền sáng và váy trắng.",
+      "Shadow +1 cho ảnh có độ đặc như bản in.",
+      "Ấm và rực hơn Portra 160 một chút."
+    ],
+    "avoid": "Trên X-T3 bỏ dòng Clarity."
+  },
+  "kodak-tmax-400-mono": {
+    "bestFor": "Đen trắng ở ánh sáng phẳng đến vừa: phố trời mây, bảo tàng, ảnh tài liệu.",
+    "tips": [
+      "Sharpness +2, Clarity +2 cho kết cấu sắc, viền rõ.",
+      "NR −2 giữ hạt mịn thay vì xoá mất.",
+      "Lạnh và chính xác, ngược với Tri-X ấm và lỏng."
+    ],
+    "avoid": "X-T3 không có Clarity."
+  },
+  "kodak-tri-x-400-box-speed": {
+    "bestFor": "Đen trắng phóng sự, ánh sáng cửa sổ, trời mây.",
+    "tips": [
+      "Phơi sáng theo vùng sáng, để vùng tối tự rơi.",
+      "Clarity +1 tạo chất cho vải, gạch, da.",
+      "Đây là Tri-X không push: tương phản vừa phải, dễ dùng."
+    ],
+    "avoid": "Muốn tương phản gắt kiểu push thì dùng recipe Acros Street."
+  },
+  "kodak-ultramax-400": {
+    "bestFor": "Bóng râm, ánh sáng hỗn hợp trong nhà, ảnh đời thường.",
+    "tips": [
+      "Bù +1/3 đến +2/3 EV, đúng kiểu Ultramax hay được chụp dư sáng.",
+      "Shift xanh −5 là thứ tạo nên độ ấm kiểu bản scan in ảnh.",
+      "Hạt Strong/Large + Sharpness −2 cho cảm giác film bình dân mềm."
+    ],
+    "avoid": "X-T3 không có Classic Negative lẫn Clarity."
+  },
+  "kodak-vision3-250d-cinema": {
+    "bestFor": "Ánh sáng ban ngày mềm, có hướng: trưa trời mây, bóng râm, chân dung ngược sáng.",
+    "tips": [
+      "Phơi sáng theo vùng sáng, để DR400 giữ mây và cửa sổ.",
+      "Shadow −1 giữ vùng tối mở, có chất điện ảnh.",
+      "Sạch và 'chuyên nghiệp' hơn CineStill 400D, không có hiệu ứng loé."
+    ],
+    "avoid": "X-T3 không có Clarity."
+  },
+  "kodak-vision3-500t-cinema-night": {
+    "bestFor": "Đêm có đèn hỗn hợp: đường ướt, tủ kính đèn vàng, đèn đường, neon.",
+    "tips": [
+      "WB 4300K (lạnh hơn tungsten) để đèn ngả cam, không khí xung quanh ngả teal.",
+      "Đo sáng theo nguồn sáng, bù −1/3 đến 0 EV để biển hiệu không cháy.",
+      "Phẳng và tinh tế hơn bản CineStill 800T."
+    ],
+    "avoid": "X-T3 không có Clarity; nếu dùng thì bỏ dòng đó."
+  },
+  "natura-1600-night-snapshot": {
+    "bestFor": "Chụp đêm cầm tay không flash, trong quán, tiệc, phòng tối.",
+    "tips": [
+      "Để ISO 1600–6400 cho cảm biến góp thêm chất hạt.",
+      "Bù +1/3 đến +2/3 EV trong phòng tối để mặt người sáng.",
+      "Shadow −2 mở góc tối thành màu xám mềm."
+    ],
+    "avoid": "Muốn sạch, trung tính hơn thì dùng Portra 800. X-T3 không dùng được."
+  },
+  "nostalgic-neg-70s-golden-hour": {
+    "bestFor": "Nắng thấp, ấm, bóng đổ dài, giờ vàng.",
+    "tips": [
+      "Chụp hướng về mặt trời thấp; shift đỏ +4 / xanh −4 đẩy vùng sáng về màu hổ phách.",
+      "Shadow +1 giữ vùng tối nâu đặc chứ không đen trống.",
+      "Clarity −2, Sharpness −1 tạo độ mềm như ảnh in."
+    ],
+    "avoid": "Trưa phẳng sẽ hơi đục. Chỉ dùng được trên máy có Nostalgic Neg (X-Trans V)."
+  },
+  "polaroid-600-instant-fade": {
+    "bestFor": "Ảnh đời thường mang cảm giác ảnh lấy liền đã phai màu.",
+    "tips": [
+      "Bù sáng +1/3 đến +1 EV cho vùng sáng mềm, vùng tối nhạt.",
+      "Shadow −2 tạo màu đen 'đục sữa' của ảnh lấy liền cũ.",
+      "Muốn phai hơn: đẩy EV lên +1 và giảm Color xuống −3."
+    ],
+    "avoid": "Đừng dùng DR400 vì nó sẽ cứu lại vùng sáng bạn muốn để cháy. Cần máy có Nostalgic Neg."
+  },
+  "pro-400h-pastel-wedding": {
+    "bestFor": "Ánh sáng mềm, khuếch tán: cửa sổ, bóng râm, sáng sớm trời mây. Hợp ảnh cưới.",
+    "tips": [
+      "Phơi sáng dư hẳn (+2/3 đến +1 EV), đây là bắt buộc với kiểu ảnh này.",
+      "Highlight −2 / Shadow −1 cho ảnh phẳng và mềm như kem.",
+      "Clarity −2, Sharpness −2 làm mềm da."
+    ],
+    "avoid": "Trên X-T3 bỏ Clarity, ảnh sẽ hơi sắc hơn."
+  },
+  "pro-neg-hi-editorial-portrait": {
+    "bestFor": "Chân dung có dàn dựng, lookbook, ánh sáng kiểm soát được hoặc trời mây.",
+    "tips": [
+      "Đo sáng cho da, bù 0 đến +1/3 EV để tương phản không làm gắt má và cằm.",
+      "DR200 giữ vùng sáng trên trán và catchlight trong mắt.",
+      "Sắc nét và có lực hơn Pro Neg Std."
+    ],
+    "avoid": "Nắng gắt giữa trưa thì cần thêm vùng sáng dự phòng. X-T3 không có Clarity."
+  },
+  "provia-100f-slide-film": {
+    "bestFor": "Nắng trong có hướng: trời trưa, kiến trúc sơn màu, du lịch nhiều màu cơ bản.",
+    "tips": [
+      "Đo sáng hơi dè dặt (−1/3 đến 0 EV) để vùng sáng giữ độ đặc.",
+      "Highlight +2 / Shadow +2 cho tương phản kiểu phim dương bản.",
+      "Không thêm grain vì Provia 100F gần như không có hạt."
+    ],
+    "avoid": "X-T3 không có Clarity."
+  },
+  "provia-honest-daylight": {
+    "bestFor": "Trưa và ánh sáng ban ngày thông thường. Recipe 'mặc định' dễ dùng.",
+    "tips": [
+      "DR200 giữ trời và áo sáng khi nắng cao.",
+      "Đo sáng bình thường, bù 0 đến +1/3 EV cho mặt người sáng.",
+      "Đừng tăng Color lên cao, giữ màu trời và lá tin được."
+    ],
+    "avoid": "Chạy được trên mọi máy trong danh sách, kể cả X-T3."
+  },
+  "reala-ace-cinematic-daylight": {
+    "bestFor": "Ánh sáng chiều, chụp trong nhà ra ngoài trời không cần đổi setting.",
+    "tips": [
+      "Đo sáng cho da và bù +1/3 đến +2/3 EV; Highlight −1 cho bạn khoảng an toàn.",
+      "Shift đỏ +1 / xanh −2 ấm nhẹ mà không bị cam.",
+      "DR400 giữ cửa sổ sáng khi nắng chiếu vào phòng tối."
+    ],
+    "avoid": "Cần máy có Reala Ace (X100VI, X-T50, X-E5, X-M5, hoặc X-T5/X-H2 sau khi cập nhật firmware)."
+  },
+  "velvia-50-slide-original": {
+    "bestFor": "Phong cảnh dưới nắng trực tiếp hoặc giờ vàng thấp.",
+    "tips": [
+      "ISO gốc, phơi sáng theo vùng sáng; bù −2/3 đến −1/3 EV là bắt buộc.",
+      "DR100 không có vùng dự phòng, trời sáng cháy là mất.",
+      "Shadow +2 cho màu đen sâu, để lá tối và đá đặc lại."
+    ],
+    "avoid": "Rất khó tính; muốn dễ dùng hơn thì chọn Velvia Vivid Landscape. X-T3 không có Clarity."
+  },
+  "velvia-vivid-landscape": {
+    "bestFor": "Phong cảnh giờ vàng hoặc nắng trưa trong.",
+    "tips": [
+      "DR400 giữ trời và mặt nước sáng (ISO gốc khoảng 640).",
+      "Bù −1/3 EV để màu xanh dương không bị gắt.",
+      "Clarity +2 làm rõ các dãy núi ở xa."
+    ],
+    "avoid": "Không dùng cho chân dung vì da sẽ đỏ au. X-T3 bỏ dòng Clarity."
+  }
+}

@@ -1,5 +1,6 @@
 import data from "@/data/recipes.json";
 import sceneData from "@/data/scenes.json";
+import tipsData from "@/data/tips.json";
 
 export type RecipeSetting = {
   name: string;
@@ -24,8 +25,21 @@ export type Scene = {
   name: string;
 };
 
+/** Hand-written shooting tips (our own words, not copied from the source). */
+export type RecipeTips = {
+  bestFor: string;
+  tips: string[];
+  avoid?: string;
+};
+
 export const recipes: Recipe[] = data;
 export const scenes: Scene[] = sceneData;
+
+const tips: Record<string, RecipeTips> = tipsData;
+
+export function getTips(slug: string): RecipeTips | undefined {
+  return tips[slug];
+}
 
 export function findScene(slug: string | null | undefined) {
   return slug ? scenes.find((s) => s.slug === slug) : undefined;

@@ -1,7 +1,16 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { Camera, Check, Copy, ExternalLink, Shuffle } from "lucide-react";
+import {
+  Camera,
+  Check,
+  Copy,
+  ExternalLink,
+  Lightbulb,
+  Shuffle,
+  Sun,
+  TriangleAlert,
+} from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -16,6 +25,7 @@ import {
 import { Separator } from "@/components/ui/separator";
 import {
   findScene,
+  getTips,
   groupSettings,
   pickRandom,
   recipes,
@@ -70,6 +80,7 @@ export function RecipeRandomizer({
   const [copied, setCopied] = useState(false);
 
   const pool = recipesInScene(scene);
+  const tips = getTips(recipe.slug);
   const activeScene = findScene(scene);
 
   const show = useCallback((next: Recipe, sceneSlug?: string) => {
@@ -190,6 +201,50 @@ export function RecipeRandomizer({
             </section>
           ))}
         </CardContent>
+
+        {tips && (
+          <CardContent>
+            <section className="rounded-lg bg-muted/50 p-4">
+              <h3 className="mb-3 flex items-center gap-1.5 text-xs font-medium tracking-wider text-muted-foreground uppercase">
+                <Lightbulb className="size-3.5" />
+                Mẹo chụp
+              </h3>
+              <p className="flex gap-2 text-sm">
+                <Sun className="mt-0.5 size-4 shrink-0 text-amber-500" />
+                <span>
+                  <span className="font-medium">Ánh sáng hợp: </span>
+                  {tips.bestFor}
+                </span>
+              </p>
+              <ul className="mt-3 space-y-1.5 text-sm text-muted-foreground">
+                {tips.tips.map((tip) => (
+                  <li key={tip} className="flex gap-2">
+                    <span aria-hidden className="mt-2 size-1 shrink-0 rounded-full bg-foreground/40" />
+                    {tip}
+                  </li>
+                ))}
+              </ul>
+              {tips.avoid && (
+                <p className="mt-3 flex gap-2 text-sm">
+                  <TriangleAlert className="mt-0.5 size-4 shrink-0 text-orange-500" />
+                  <span>
+                    <span className="font-medium">Lưu ý: </span>
+                    {tips.avoid}
+                  </span>
+                </p>
+              )}
+              <a
+                href={recipe.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center gap-1 text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground"
+              >
+                Đọc ghi chú &amp; hỏi đáp đầy đủ trên FujiRecipes
+                <ExternalLink className="size-3" />
+              </a>
+            </section>
+          </CardContent>
+        )}
 
         {recipe.cameras.length > 0 && (
           <CardContent>
