@@ -42,3 +42,7 @@ next-env.d.ts
 
 # local tooling
 /.claude
+
+# use yarn only
+package-lock.json
+pnpm-lock.yaml
