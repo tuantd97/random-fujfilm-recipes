@@ -69,3 +69,18 @@ Then commit the updated `recipes.json`.
 2. In Vercel, go to **Add New → Project → Import** the repo.
 3. Keep the defaults (Framework: Next.js). Vercel sees `yarn.lock` and runs `yarn install` and `yarn build` on its own, so you don't need to change the Install/Build Command or add any environment variables.
 4. Node.js version: under **Settings → Build and Deployment → Node.js Version**, pick **24.x** (or 22.x). `engines.node` in `package.json` requires >= 22.12.
+
+## Troubleshooting
+
+**`Cannot find module '.../node_modules/@tailwindcss/turbopack/dist/index.js'`** when running `yarn dev`
+
+This usually happens after reinstalling `node_modules` or switching Node versions while the old Turbopack cache in `.next` is still around. To fix it:
+
+1. Stop every running `yarn dev` (Ctrl+C), then check that nothing is still listening on port 3000: `lsof -iTCP:3000 -sTCP:LISTEN`
+2. Delete the cache and start again:
+
+```bash
+rm -rf .next && yarn dev
+```
+
+If that still doesn't work, reinstall the dependencies: `rm -rf node_modules .next && yarn install && yarn dev`
