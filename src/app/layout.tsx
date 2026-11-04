@@ -27,7 +27,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-background font-sans text-foreground">
+      {/* Browser extensions (Grammarly, ColorZilla...) inject attributes on <body>. */}
+      <body
+        suppressHydrationWarning
+        className="flex min-h-full flex-col bg-background font-sans text-foreground"
+      >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <TooltipProvider>{children}</TooltipProvider>
         </ThemeProvider>
