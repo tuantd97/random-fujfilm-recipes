@@ -1,0 +1,3462 @@
+[
+  {
+    "slug": "agfa-vista-200",
+    "name": "Agfa Vista 200",
+    "emulates": "Agfa Vista 200",
+    "description": "A red-forward, punchy Classic Negative recipe that recreates the cult UK drugstore look of Agfa Vista 200: warm saturation, crisp contrast, crunchy grain.",
+    "scenes": [
+      "Vivid color",
+      "Everyday",
+      "Daylight"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Classic Negative"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR200"
+      },
+      {
+        "name": "Highlight",
+        "value": "+1"
+      },
+      {
+        "name": "Shadow",
+        "value": "+1"
+      },
+      {
+        "name": "Color",
+        "value": "+2"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +4 · Blue −3"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Strong"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Weak"
+      },
+      {
+        "name": "Sharpness",
+        "value": "+1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "+1"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Strong, Large"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 3200"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "+1/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/agfa-vista-200"
+  },
+  {
+    "slug": "astia-100f-slide-film",
+    "name": "Astia 100F",
+    "emulates": "Fujifilm Astia 100F",
+    "description": "An accurate Astia 100F emulation: gentle slide contrast with real midtone snap, faithful-but-flattering skin, and delicate pastel highlights.",
+    "scenes": [
+      "Portraits",
+      "Skin tones",
+      "Pastel"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Astia / Soft"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR200"
+      },
+      {
+        "name": "Highlight",
+        "value": "0"
+      },
+      {
+        "name": "Shadow",
+        "value": "+1"
+      },
+      {
+        "name": "Color",
+        "value": "+1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +1 · Blue −1"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Weak"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "0"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "−1"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "+1/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-H2",
+      "X-S20",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/astia-100f-slide-film"
+  },
+  {
+    "slug": "cinestill-50d-fine-grain",
+    "name": "CineStill 50D",
+    "emulates": "CineStill 50D",
+    "description": "A clean, luminous Eterna recipe emulating CineStill 50D: near-grainless, airy highlights and delicate warm-neutral colour for golden-hour fine-art work.",
+    "scenes": [
+      "Golden hour",
+      "Daylight",
+      "Warm tones"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Eterna / Cinema"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "−2"
+      },
+      {
+        "name": "Shadow",
+        "value": "−1"
+      },
+      {
+        "name": "Color",
+        "value": "+1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight / 5500K"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +2 · Blue −2"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Weak"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−3"
+      },
+      {
+        "name": "Clarity",
+        "value": "−2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "ISO 100–400, base where possible"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "+1/3 to +2/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/cinestill-50d-fine-grain"
+  },
+  {
+    "slug": "fujicolor-c200",
+    "name": "Fujicolor C200",
+    "emulates": "Fujicolor C200",
+    "description": "Fuji's honest budget negative: cool, clean greens with a slight cyan lean, neutral skin and fine grain, built on Classic Negative with a cool WB shift.",
+    "scenes": [
+      "Everyday",
+      "Documentary",
+      "Street"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Classic Negative"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR200"
+      },
+      {
+        "name": "Highlight",
+        "value": "0"
+      },
+      {
+        "name": "Shadow",
+        "value": "+1"
+      },
+      {
+        "name": "Color",
+        "value": "−1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red −2 · Blue +2"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Weak"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Weak"
+      },
+      {
+        "name": "Sharpness",
+        "value": "0"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "−1"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 3200"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "0 to +1/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/fujicolor-c200"
+  },
+  {
+    "slug": "harman-phoenix-200-experimental",
+    "name": "Harman Phoenix 200",
+    "emulates": "Harman Phoenix 200",
+    "description": "An anti-Portra Eterna Bleach Bypass recipe chasing Harman Phoenix 200: high contrast, red-leaning halation, teal shadows and coarse Strong grain.",
+    "scenes": [
+      "Street",
+      "Golden hour",
+      "Moody"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Eterna Bleach Bypass"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR200"
+      },
+      {
+        "name": "Highlight",
+        "value": "+2"
+      },
+      {
+        "name": "Shadow",
+        "value": "+2"
+      },
+      {
+        "name": "Color",
+        "value": "+2"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (~5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +3 · Blue +1"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Strong"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Weak"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "+1"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Strong, Large"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "-1/3 to 0 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-T4",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/harman-phoenix-200-experimental"
+  },
+  {
+    "slug": "ilford-delta-3200-night-bw",
+    "name": "Ilford Delta 3200",
+    "emulates": "Ilford Delta 3200",
+    "description": "A high-ISO Acros monochrome recipe with Strong/Large grain and open shadows, built for concerts, bars and available-darkness night streets where grain is the subject.",
+    "scenes": [
+      "Black & white",
+      "Night",
+      "Low light"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Acros"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "−2"
+      },
+      {
+        "name": "Color",
+        "value": "0"
+      },
+      {
+        "name": "White Balance",
+        "value": "Auto"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red 0 · Blue 0"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Off"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−2"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−4"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Strong, Large"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 12800"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "+1/3 to +2/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II",
+      "X-T3"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/ilford-delta-3200-night-bw"
+  },
+  {
+    "slug": "kodak-colorplus-200",
+    "name": "Kodak ColorPlus 200",
+    "emulates": "Kodak ColorPlus 200",
+    "description": "A flat, humble Classic Negative recipe that mimics Kodak ColorPlus 200: warm but not golden, lifted blacks, muted skies, and honest budget grain.",
+    "scenes": [
+      "Everyday",
+      "Street",
+      "Daylight"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Classic Negative"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR200"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "−1"
+      },
+      {
+        "name": "Color",
+        "value": "−1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +2 · Blue −2"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Weak"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "−2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Strong, Large"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "+1/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/kodak-colorplus-200"
+  },
+  {
+    "slug": "kodak-proimage-100",
+    "name": "Kodak ProImage 100",
+    "emulates": "Kodak ProImage 100",
+    "description": "A warm, budget-Portra portrait recipe on Pro Neg Std with a +3 Red / −2 Blue shift and modest contrast — richer skin than Portra 160 without the pastel wash.",
+    "scenes": [
+      "Portraits",
+      "Skin tones",
+      "Daylight"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Pro Neg. Std"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR200"
+      },
+      {
+        "name": "Highlight",
+        "value": "0"
+      },
+      {
+        "name": "Shadow",
+        "value": "+1"
+      },
+      {
+        "name": "Color",
+        "value": "+1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +3 · Blue −2"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Weak"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "0"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "−1"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 3200"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "0 to +1/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/kodak-proimage-100"
+  },
+  {
+    "slug": "kodak-tmax-400-mono",
+    "name": "Kodak T-Max 400",
+    "emulates": "Kodak T-Max 400",
+    "description": "A clean, fine-grained ACROS recipe emulating Kodak T-Max 400: cooler tonality, precise mid-greys and high edge sharpness for a technical documentary black-and-white look.",
+    "scenes": [
+      "Black & white",
+      "Documentary",
+      "Street"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Acros"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR200"
+      },
+      {
+        "name": "Highlight",
+        "value": "+1"
+      },
+      {
+        "name": "Shadow",
+        "value": "+1"
+      },
+      {
+        "name": "Color",
+        "value": "0"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red −1 · Blue +1"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Off"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "+2"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "+2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "-1/3 to 0 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/kodak-tmax-400-mono"
+  },
+  {
+    "slug": "kodak-vision3-250d-cinema",
+    "name": "Kodak Vision3 250D",
+    "emulates": "Kodak Vision3 250D (5207)",
+    "description": "A clean, halation-free Eterna recipe emulating Kodak Vision3 250D (5207): soft daylight contrast, huge highlight latitude, neutral-warm skin and muted-but-alive colour.",
+    "scenes": [
+      "Cinematic",
+      "Daylight",
+      "Skin tones"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Eterna / Cinema"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "−2"
+      },
+      {
+        "name": "Shadow",
+        "value": "−1"
+      },
+      {
+        "name": "Color",
+        "value": "+1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +1 · Blue −2"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Strong"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Weak"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−3"
+      },
+      {
+        "name": "Clarity",
+        "value": "−2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "+1/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/kodak-vision3-250d-cinema"
+  },
+  {
+    "slug": "kodak-vision3-500t-cinema-night",
+    "name": "Vision3 500T",
+    "emulates": "Kodak Vision3 500T (5219)",
+    "description": "A restrained Eterna night-cinema recipe emulating Kodak Vision3 500T: cool teal shadows, warm orange practicals, tight grain, DR400 open blacks.",
+    "scenes": [
+      "Cinematic",
+      "Night",
+      "Neon & city lights"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Eterna / Cinema"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "−1"
+      },
+      {
+        "name": "Color",
+        "value": "0"
+      },
+      {
+        "name": "White Balance",
+        "value": "4300K (cool of tungsten)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red −2 · Blue +4"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Weak"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Strong"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−4"
+      },
+      {
+        "name": "Clarity",
+        "value": "−2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Strong, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "-1/3 to 0 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/kodak-vision3-500t-cinema-night"
+  },
+  {
+    "slug": "natura-1600-night-snapshot",
+    "name": "Natura 1600",
+    "emulates": "Fujifilm Natura 1600",
+    "description": "A grain-forward, ambient-warm Classic Negative recipe for available-darkness night snapshots — Fujifilm's take on the cult Natura 1600 colour negative.",
+    "scenes": [
+      "Night",
+      "Low light",
+      "Warm tones"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Classic Negative"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "−2"
+      },
+      {
+        "name": "Color",
+        "value": "−1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Auto (warm ~3800K ambient)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +2 · Blue −3"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Weak"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−3"
+      },
+      {
+        "name": "Clarity",
+        "value": "−2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Strong, Large"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, ISO 1600–6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "0 to +2/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/natura-1600-night-snapshot"
+  },
+  {
+    "slug": "polaroid-600-instant-fade",
+    "name": "Polaroid 600",
+    "emulates": "Polaroid 600 instant film",
+    "description": "A faded Polaroid 600 look for Fujifilm: milky lifted blacks, washed pastel colour and very soft detail built on Nostalgic Negative.",
+    "scenes": [
+      "Everyday",
+      "Pastel",
+      "Portraits"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Nostalgic Negative"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR200"
+      },
+      {
+        "name": "Highlight",
+        "value": "−2"
+      },
+      {
+        "name": "Shadow",
+        "value": "−2"
+      },
+      {
+        "name": "Color",
+        "value": "−2"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +3 · Blue +1"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Weak"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−3"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "−4"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Large"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "+1/3 to +1 EV"
+      }
+    ],
+    "cameras": [
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X100VI",
+      "X-H2",
+      "X-H2S",
+      "X-S20"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/polaroid-600-instant-fade"
+  },
+  {
+    "slug": "provia-100f-slide-film",
+    "name": "Provia 100F",
+    "emulates": "Fujifilm Provia 100F",
+    "description": "A crisp Provia recipe tuned to the real Provia 100F slide film: true slide contrast, clean cool-neutral colour, and deep grainless primaries.",
+    "scenes": [
+      "Daylight",
+      "Vivid color",
+      "Midday sun"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Provia / Standard"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR200"
+      },
+      {
+        "name": "Highlight",
+        "value": "+2"
+      },
+      {
+        "name": "Shadow",
+        "value": "+2"
+      },
+      {
+        "name": "Color",
+        "value": "+2"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red −1 · Blue +1"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Strong"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Weak"
+      },
+      {
+        "name": "Sharpness",
+        "value": "+1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "+1"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Off"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 3200"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "-1/3 to 0 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-H2",
+      "X-S20",
+      "X100V",
+      "X-Pro3",
+      "X-T4"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/provia-100f-slide-film"
+  },
+  {
+    "slug": "velvia-50-slide-original",
+    "name": "Velvia 50",
+    "emulates": "Fujifilm Velvia 50 (RVP 50)",
+    "description": "A slide-accurate Velvia 50 recipe: maximum colour density, inky shadows and cool-magenta blues on the Velvia base — meter carefully or lose the frame.",
+    "scenes": [
+      "Vivid color",
+      "Daylight",
+      "Golden hour"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Velvia / Vivid"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR100"
+      },
+      {
+        "name": "Highlight",
+        "value": "+1"
+      },
+      {
+        "name": "Shadow",
+        "value": "+2"
+      },
+      {
+        "name": "Color",
+        "value": "+4"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5000K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +1 · Blue +2"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Strong"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Strong"
+      },
+      {
+        "name": "Sharpness",
+        "value": "+2"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "+2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Off"
+      },
+      {
+        "name": "ISO",
+        "value": "ISO 125 (base), avoid Auto"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "-2/3 to -1/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/velvia-50-slide-original"
+  },
+  {
+    "slug": "astia-soft-skin-portrait",
+    "name": "Astia Soft Portrait",
+    "emulates": "Soft studio-portrait film rendering",
+    "description": "A flattering natural-light portrait recipe on Astia with −3 Clarity, softened highlights and a warm WB shift for smooth skin tones.",
+    "scenes": [
+      "Portraits",
+      "Skin tones",
+      "Indoor portraits"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Astia / Soft"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR200"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "−1"
+      },
+      {
+        "name": "Color",
+        "value": "−1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Auto, warm (5500K feel)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +2 · Blue −2"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Weak"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−2"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−1"
+      },
+      {
+        "name": "Clarity",
+        "value": "−3"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "+1/3 to +2/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-H2",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/astia-soft-skin-portrait"
+  },
+  {
+    "slug": "cinestill-400d-daylight-cinema",
+    "name": "CineStill 400D",
+    "emulates": "CineStill 400D",
+    "description": "A soft, warm-neutral Eterna recipe emulating CineStill 400D for golden daylight streets and portraits — DR400 highlights, lifted shadows, fine grain.",
+    "scenes": [
+      "Golden hour",
+      "Portraits",
+      "Street"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Eterna / Cinema"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "−1"
+      },
+      {
+        "name": "Color",
+        "value": "+1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +2 · Blue −2"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Weak"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "−2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "+1/3 to +2/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/cinestill-400d-daylight-cinema"
+  },
+  {
+    "slug": "eterna-bleach-bypass-gritty-cinematic",
+    "name": "Eterna Bleach Bypass: Gritty Cinematic",
+    "emulates": "Bleach bypass / silver-retention film processing",
+    "description": "A drained, high-contrast Eterna Bleach Bypass recipe with metallic highlights and heavy mood — built for rain, concrete and night streets.",
+    "scenes": [
+      "Cinematic",
+      "Moody",
+      "Night"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Eterna Bleach Bypass"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "+1"
+      },
+      {
+        "name": "Shadow",
+        "value": "+3"
+      },
+      {
+        "name": "Color",
+        "value": "−2"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red −1 · Blue +2"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Strong"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Weak"
+      },
+      {
+        "name": "Sharpness",
+        "value": "+1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "+3"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Strong, Large"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "-2/3 to -1/3 EV"
+      }
+    ],
+    "cameras": [
+      "X-T4",
+      "X-T5",
+      "X-T50",
+      "X100VI",
+      "X-S20",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-E4",
+      "X-S10",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/eterna-bleach-bypass-gritty-cinematic"
+  },
+  {
+    "slug": "fuji-superia-xtra-400",
+    "name": "Superia X-Tra 400",
+    "emulates": "Fujifilm Superia X-Tra 400",
+    "description": "A Classic Negative recipe emulating Fujifilm Superia X-Tra 400: cool teal-leaning greens, magenta-tinged shadows and honest everyday grain for a composed family-album look.",
+    "scenes": [
+      "Everyday",
+      "Street",
+      "Documentary"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Classic Negative"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "0"
+      },
+      {
+        "name": "Shadow",
+        "value": "+1"
+      },
+      {
+        "name": "Color",
+        "value": "+1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red −1 · Blue +2"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Weak"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Weak"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "−1"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Strong, Large"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "0 to +1/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/fuji-superia-xtra-400"
+  },
+  {
+    "slug": "ilford-hp5-plus-400-acros",
+    "name": "Ilford HP5 Plus 400",
+    "emulates": "Ilford HP5 Plus 400",
+    "description": "A flat, forgiving Acros+Yellow black-and-white recipe that emulates Ilford HP5 Plus 400 for overcast light, with soft grain and open shadows.",
+    "scenes": [
+      "Black & white",
+      "Overcast",
+      "Documentary"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Acros + Ye (yellow filter)"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "−2"
+      },
+      {
+        "name": "Color",
+        "value": "0"
+      },
+      {
+        "name": "White Balance",
+        "value": "Auto"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red 0 · Blue 0"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Off"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "−2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "0 to +2/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/ilford-hp5-plus-400-acros"
+  },
+  {
+    "slug": "kodak-ektachrome-e100-slide",
+    "name": "Kodak Ektachrome E100",
+    "emulates": "Kodak Ektachrome E100",
+    "description": "A clean, cool-neutral Provia recipe emulating Kodak Ektachrome E100: precise blues, tight contrast, delicate highlight roll-off for daylight travel and editorial landscapes.",
+    "scenes": [
+      "Travel",
+      "Architecture",
+      "Daylight"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Provia / Standard"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR200"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "+1"
+      },
+      {
+        "name": "Color",
+        "value": "0"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red −2 · Blue +2"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Weak"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Strong"
+      },
+      {
+        "name": "Sharpness",
+        "value": "+1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "+1"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Off"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "0 to +1/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/kodak-ektachrome-e100-slide"
+  },
+  {
+    "slug": "kodak-portra-800-low-light",
+    "name": "Kodak Portra 800",
+    "emulates": "Kodak Portra 800",
+    "description": "A warm, punchy Classic Negative recipe emulating Kodak Portra 800 for tungsten and mixed evening light, with STRONG large grain and DR400 to hold skin under dim conditions.",
+    "scenes": [
+      "Indoor portraits",
+      "Low light",
+      "Night"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Classic Negative"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "+1"
+      },
+      {
+        "name": "Color",
+        "value": "+2"
+      },
+      {
+        "name": "White Balance",
+        "value": "3800K"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +4 · Blue −4"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Strong"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Weak"
+      },
+      {
+        "name": "Sharpness",
+        "value": "0"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−3"
+      },
+      {
+        "name": "Clarity",
+        "value": "−1"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Strong, Large"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 12800"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "-1/3 to +1/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/kodak-portra-800-low-light"
+  },
+  {
+    "slug": "kodak-portra-160-pro-neg-std",
+    "name": "Kodak Portra 160",
+    "emulates": "Kodak Portra 160",
+    "description": "A clean, low-saturation Pro Neg Std recipe emulating Kodak Portra 160: flat contrast, fine grain and cool-neutral skin for studio and bright-daylight portraits.",
+    "scenes": [
+      "Portraits",
+      "Skin tones",
+      "Daylight"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Pro Neg. Std"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR200"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "−1"
+      },
+      {
+        "name": "Color",
+        "value": "−1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red −1 · Blue +1"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Weak"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "−2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "ISO 160, up to 800"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "0 to +1/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/kodak-portra-160-pro-neg-std"
+  },
+  {
+    "slug": "kodak-ektar-100",
+    "name": "Kodak Ektar 100",
+    "emulates": "Kodak Ektar 100",
+    "description": "A crisp, nearly grainless travel and landscape look emulating Kodak Ektar 100 — Velvia dialed back with Color −2 and a warm +2 Red shift.",
+    "scenes": [
+      "Travel",
+      "Vivid color",
+      "Daylight"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Velvia / Vivid"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR200"
+      },
+      {
+        "name": "Highlight",
+        "value": "0"
+      },
+      {
+        "name": "Shadow",
+        "value": "+1"
+      },
+      {
+        "name": "Color",
+        "value": "−2"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +2 · Blue −1"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Strong"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Weak"
+      },
+      {
+        "name": "Sharpness",
+        "value": "+1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "+1"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Off"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, base ISO 200 up to ISO 1600"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "-1/3 to 0 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-H2",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/kodak-ektar-100"
+  },
+  {
+    "slug": "kodak-tri-x-400-box-speed",
+    "name": "Kodak Tri-X 400 (Box Speed)",
+    "emulates": "Kodak Tri-X 400 (box speed, unpushed)",
+    "description": "A medium-contrast Acros+G recipe emulating box-speed Tri-X 400: rich mid-greys, forgiving highlights and pronounced organic grain for documentary and portrait work.",
+    "scenes": [
+      "Black & white",
+      "Documentary",
+      "Portraits"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Acros + G (green filter)"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "+1"
+      },
+      {
+        "name": "Color",
+        "value": "0"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red 0 · Blue 0"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Off"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−4"
+      },
+      {
+        "name": "Clarity",
+        "value": "+1"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Strong, Large"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, ISO 400–6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "0 to +1/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/kodak-tri-x-400-box-speed"
+  },
+  {
+    "slug": "nostalgic-neg-70s-golden-hour",
+    "name": "Nostalgic Negative Golden Hour",
+    "emulates": "1970s Kodak amateur color / faded print stock",
+    "description": "A warm, low-key Nostalgic Negative recipe for late sun — amber highlights, cocoa shadows and muted saturation that echo 1970s American color photography.",
+    "scenes": [
+      "Golden hour",
+      "Warm tones",
+      "Portraits"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Nostalgic Negative"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "+1"
+      },
+      {
+        "name": "Color",
+        "value": "−1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (~5500K), shifted warm"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +4 · Blue −4"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Strong"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "−2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "-1/3 to +1/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/nostalgic-neg-70s-golden-hour"
+  },
+  {
+    "slug": "pro-400h-pastel-wedding",
+    "name": "Pro 400H",
+    "emulates": "Fujifilm Pro 400H",
+    "description": "An airy, minty-highlight Astia recipe emulating discontinued Fujifilm Pro 400H, shot a stop over for luminous pastel skin.",
+    "scenes": [
+      "Portraits",
+      "Skin tones",
+      "Pastel"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Astia / Soft"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "−2"
+      },
+      {
+        "name": "Shadow",
+        "value": "−1"
+      },
+      {
+        "name": "Color",
+        "value": "−2"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5900K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red −2 · Blue +1"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Off"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−2"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "−2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "+2/3 to +1 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-H2",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/pro-400h-pastel-wedding"
+  },
+  {
+    "slug": "pro-neg-hi-editorial-portrait",
+    "name": "Pro Neg Hi Editorial Portrait",
+    "emulates": "",
+    "description": "A crisp Pro Neg Hi recipe for directed portraits and lookbooks — precise skin, restrained colour, and a touch more punch than Pro Neg Std in controlled light.",
+    "scenes": [
+      "Portraits",
+      "Skin tones",
+      "Indoor portraits"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Pro Neg. Hi"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR200"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "−1"
+      },
+      {
+        "name": "Color",
+        "value": "+1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +1 · Blue −2"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Weak"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "+1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "+1"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "0 to +1/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/pro-neg-hi-editorial-portrait"
+  },
+  {
+    "slug": "provia-honest-daylight",
+    "name": "Honest Daylight Provia",
+    "emulates": "",
+    "description": "A restrained Provia recipe for accurate-but-warm everyday color: believable skies, neutral skin, and a gentle +1 Red shift that keeps daylight true to memory.",
+    "scenes": [
+      "Daylight",
+      "Everyday",
+      "Skin tones"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Provia / Standard"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR200"
+      },
+      {
+        "name": "Highlight",
+        "value": "0"
+      },
+      {
+        "name": "Shadow",
+        "value": "−1"
+      },
+      {
+        "name": "Color",
+        "value": "+1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +1 · Blue −1"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Weak"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "0"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "0 to +1/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-H2",
+      "X-S20",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II",
+      "X-T3"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/provia-honest-daylight"
+  },
+  {
+    "slug": "velvia-vivid-landscape",
+    "name": "Velvia Vivid Landscape",
+    "emulates": "Fujifilm Velvia 50 slide film",
+    "description": "A punchy Velvia landscape recipe with DR400, +1 Color and Color Chrome Effect Strong for saturated foliage and rich clear skies at golden hour.",
+    "scenes": [
+      "Golden hour",
+      "Daylight",
+      "Vivid color"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Velvia / Vivid"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "0"
+      },
+      {
+        "name": "Shadow",
+        "value": "+1"
+      },
+      {
+        "name": "Color",
+        "value": "+1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +1 · Blue −2"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Strong"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Strong"
+      },
+      {
+        "name": "Sharpness",
+        "value": "+1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "+2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Off"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 3200"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "-1/3 to 0 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/velvia-vivid-landscape"
+  },
+  {
+    "slug": "acros-street-documentary",
+    "name": "Acros Street: Documentary Black & White",
+    "emulates": "Tri-X 400 push-processed for street",
+    "description": "A punchy Acros recipe built for street work — deep blacks, visible grain, and enough highlight headroom to keep shop windows and bright signs from clipping.",
+    "scenes": [
+      "Street",
+      "Black & white",
+      "Documentary"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Acros + R (red filter)"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "+2"
+      },
+      {
+        "name": "Shadow",
+        "value": "+3"
+      },
+      {
+        "name": "Color",
+        "value": "0"
+      },
+      {
+        "name": "White Balance",
+        "value": "Auto"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red 0 · Blue 0"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Off"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "+1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−4"
+      },
+      {
+        "name": "Clarity",
+        "value": "+3"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Strong, Large"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "-1/3 to -2/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/acros-street-documentary"
+  },
+  {
+    "slug": "classic-chrome-overcast-moody",
+    "name": "Overcast Moody",
+    "emulates": "Classic Chrome editorial / overcast documentary",
+    "description": "A muted, slightly cool Classic Chrome recipe built for overcast city days — deep shadows, restrained colour, and the documentary weight grey light deserves.",
+    "scenes": [
+      "Overcast",
+      "Street",
+      "Travel"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Classic Chrome"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR200"
+      },
+      {
+        "name": "Highlight",
+        "value": "+1"
+      },
+      {
+        "name": "Shadow",
+        "value": "+2"
+      },
+      {
+        "name": "Color",
+        "value": "−1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red −2 · Blue +2"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Strong"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Weak"
+      },
+      {
+        "name": "Sharpness",
+        "value": "0"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "+2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "-2/3 to -1/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/classic-chrome-overcast-moody"
+  },
+  {
+    "slug": "eterna-overcast-rain",
+    "name": "Eterna Overcast",
+    "emulates": "Eterna cinema stock under flat daylight",
+    "description": "A soft cinematic Eterna recipe for overcast and lightly rainy days — lifted shadows, low saturation, and a cool cast for wet streets and muted architecture.",
+    "scenes": [
+      "Overcast",
+      "Street",
+      "Cinematic"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Eterna / Cinema"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "−2"
+      },
+      {
+        "name": "Color",
+        "value": "−1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red −2 · Blue +2"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Weak"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Weak"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−2"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−4"
+      },
+      {
+        "name": "Clarity",
+        "value": "−3"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "+1/3 to +2/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-H2",
+      "X-H2S",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/eterna-overcast-rain"
+  },
+  {
+    "slug": "kodak-gold-200",
+    "name": "Kodak Gold 200",
+    "emulates": "Kodak Gold 200",
+    "description": "A warm, lightly grainy Kodak Gold 200 emulation built on Classic Negative — friendly skin, golden afternoon light, and saturated blue skies.",
+    "scenes": [
+      "Portraits",
+      "Travel",
+      "Golden hour"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Classic Negative"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "0"
+      },
+      {
+        "name": "Color",
+        "value": "+2"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +2 · Blue −3"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Strong"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Weak"
+      },
+      {
+        "name": "Sharpness",
+        "value": "0"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−2"
+      },
+      {
+        "name": "Clarity",
+        "value": "−2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "+1/3 to +2/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-T30 II"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/kodak-gold-200"
+  },
+  {
+    "slug": "kodak-ultramax-400",
+    "name": "Kodak Ultramax 400",
+    "emulates": "Kodak Ultramax 400",
+    "description": "A warm, friendly Classic Negative recipe emulating Kodak Ultramax 400: soft skin, visible grain, and that everyday consumer-film glow.",
+    "scenes": [
+      "Everyday",
+      "Portraits",
+      "Skin tones"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Classic Negative"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "−1"
+      },
+      {
+        "name": "Color",
+        "value": "−1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +2 · Blue −5"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Weak"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Off"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−2"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−4"
+      },
+      {
+        "name": "Clarity",
+        "value": "−2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Strong, Large"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "+1/3 to +2/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100V",
+      "X-Pro3",
+      "X-T4",
+      "X-T30 II",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-T5",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X100VI",
+      "X-H2",
+      "X-H2S"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/kodak-ultramax-400"
+  },
+  {
+    "slug": "reala-ace-cinematic-daylight",
+    "name": "Reala Ace Mixed Light",
+    "emulates": "Reala Ace (mixed-light cinematic interpretation)",
+    "description": "A restrained, cinematic Reala Ace recipe built for the situations where Portra is too daylight-warm and Classic Chrome is too contrasty — mixed indoor/outdoor afternoon light. X-Trans V exclusive.",
+    "scenes": [
+      "Mixed light",
+      "Cinematic",
+      "Travel"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Reala Ace"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "0"
+      },
+      {
+        "name": "Color",
+        "value": "−1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +1 · Blue −2"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Strong"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Weak"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−4"
+      },
+      {
+        "name": "Clarity",
+        "value": "−2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "+1/3 to +2/3 EV"
+      }
+    ],
+    "cameras": [
+      "X100VI",
+      "X-T50",
+      "X-E5",
+      "X-M5",
+      "X-T5",
+      "X-H2",
+      "X-H2S"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/reala-ace-cinematic-daylight"
+  },
+  {
+    "slug": "cinestill-800t",
+    "name": "CineStill 800T",
+    "emulates": "CineStill 800T",
+    "description": "A tungsten-balanced Classic Chrome recipe that emulates CineStill 800T for night and neon — cool teal shadows, warm streetlights, and heavy cinematic grain.",
+    "scenes": [
+      "Night",
+      "Neon & city lights",
+      "Low light"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Classic Chrome"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "−2"
+      },
+      {
+        "name": "Shadow",
+        "value": "+1"
+      },
+      {
+        "name": "Color",
+        "value": "+1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Incandescent / ~3400K"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red −1 · Blue +2"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Strong"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Strong"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−2"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−3"
+      },
+      {
+        "name": "Clarity",
+        "value": "0"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Strong, Large"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 12800"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "0 to +2/3 EV"
+      }
+    ],
+    "cameras": [
+      "X-T5",
+      "X100VI",
+      "X-T50",
+      "X-E5",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-T30 II",
+      "X-H2",
+      "X-H2S",
+      "X-M5",
+      "X-T3"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/cinestill-800t"
+  },
+  {
+    "slug": "kodachrome-64",
+    "name": "Kodachrome 64",
+    "emulates": "Kodachrome 64",
+    "description": "A punchy Classic Chrome recipe emulating Kodachrome 64 — rich reds, deep blues, crisp contrast and the timeless National Geographic daylight look.",
+    "scenes": [
+      "Daylight",
+      "Travel",
+      "Vivid color"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Classic Chrome"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR200"
+      },
+      {
+        "name": "Highlight",
+        "value": "+1"
+      },
+      {
+        "name": "Shadow",
+        "value": "+1"
+      },
+      {
+        "name": "Color",
+        "value": "+2"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +2 · Blue −3"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Strong"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Weak"
+      },
+      {
+        "name": "Sharpness",
+        "value": "+1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−3"
+      },
+      {
+        "name": "Clarity",
+        "value": "+1"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "-1/3 to 0 EV"
+      }
+    ],
+    "cameras": [
+      "X-T5",
+      "X100VI",
+      "X-T50",
+      "X-E5",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-T30 II",
+      "X-H2",
+      "X-H2S",
+      "X-M5",
+      "X-T3"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/kodachrome-64"
+  },
+  {
+    "slug": "kodak-portra-400",
+    "name": "Kodak Portra 400",
+    "emulates": "Kodak Portra 400",
+    "description": "A warm, gentle Classic Negative recipe that emulates Kodak Portra 400 — soft contrast, honest skin tones, and a golden lean for portraits and travel.",
+    "scenes": [
+      "Portraits",
+      "Golden hour",
+      "Warm tones"
+    ],
+    "settings": [
+      {
+        "name": "Film Simulation",
+        "value": "Classic Negative"
+      },
+      {
+        "name": "Dynamic Range",
+        "value": "DR400"
+      },
+      {
+        "name": "Highlight",
+        "value": "−1"
+      },
+      {
+        "name": "Shadow",
+        "value": "−1"
+      },
+      {
+        "name": "Color",
+        "value": "+1"
+      },
+      {
+        "name": "White Balance",
+        "value": "Daylight (5500K)"
+      },
+      {
+        "name": "WB Shift",
+        "value": "Red +2 · Blue −4"
+      },
+      {
+        "name": "Color Chrome FX",
+        "value": "Strong"
+      },
+      {
+        "name": "Color Chrome FX Blue",
+        "value": "Weak"
+      },
+      {
+        "name": "Sharpness",
+        "value": "−1"
+      },
+      {
+        "name": "Noise Reduction",
+        "value": "−4"
+      },
+      {
+        "name": "Clarity",
+        "value": "−2"
+      },
+      {
+        "name": "Grain Effect",
+        "value": "Weak, Small"
+      },
+      {
+        "name": "ISO",
+        "value": "Auto, up to ISO 6400"
+      },
+      {
+        "name": "Exposure Comp.",
+        "value": "+1/3 to +2/3 EV"
+      }
+    ],
+    "cameras": [
+      "X-T5",
+      "X100VI",
+      "X-T50",
+      "X-E5",
+      "X-Pro3",
+      "X-T4",
+      "X100V",
+      "X-S20",
+      "X-S10",
+      "X-E4",
+      "X-T30 II",
+      "X-H2",
+      "X-H2S",
+      "X-M5"
+    ],
+    "sourceUrl": "https://fujirecipes.io/recipes/kodak-portra-400"
+  }
+]
