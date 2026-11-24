@@ -9,6 +9,9 @@ A web app that suggests Fujifilm film simulation recipes based on the weather wh
 - **Top 3 recipes for the weather**, each with the reason it was suggested
 - Filter by shooting condition (the 8 scene categories from fujirecipes.io); both the suggestions and the random picks only use the filtered list
 - **Random** tab: draws 3 random recipes; press `Space` or `R` to draw again
+- **`/recipes`**: the full list of recipes with filters (search by name/film/description, scene category, film simulation); filters live in the URL
+- **`/recipes/[slug]`**: a detail page per recipe (settings, shooting tips, compatible cameras, categories, similar recipes), prerendered at build time
+- Top header with a menu to switch between Trang chủ (Home) and Recipes
 - Each recipe has its own shareable link: `/?r=<slug>` (with a filter: `/?scene=<scene>&r=<slug>`)
 - Shooting tips in Vietnamese for every recipe (`src/data/tips.json`)
 

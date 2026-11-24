@@ -1,7 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { Camera, Check, Copy, ExternalLink, Lightbulb, Sun, TriangleAlert } from "lucide-react";
+import Link from "next/link";
+import {
+  ArrowRight,
+  Camera,
+  Check,
+  Copy,
+  ExternalLink,
+  Lightbulb,
+  Sun,
+  TriangleAlert,
+} from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -16,7 +26,17 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { getTips, groupSettings, settingsToText, type Recipe } from "@/lib/recipes";
 
-export function RecipeDetail({ recipe }: { recipe: Recipe }) {
+export function RecipeDetail({
+  recipe,
+  titleAs: Title = "h2",
+  showPageLink = false,
+}: {
+  recipe: Recipe;
+  /** Use "h1" when the card is the page's main content. */
+  titleAs?: "h1" | "h2";
+  /** Link to /recipes/[slug], for places that show the card inline. */
+  showPageLink?: boolean;
+}) {
   const [copied, setCopied] = useState(false);
   const tips = getTips(recipe.slug);
 
@@ -38,7 +58,9 @@ export function RecipeDetail({ recipe }: { recipe: Recipe }) {
             Emulates {recipe.emulates}
           </p>
         )}
-        <CardTitle className="text-2xl font-semibold sm:text-3xl">{recipe.name}</CardTitle>
+        <CardTitle className="text-2xl font-semibold sm:text-3xl">
+          <Title>{recipe.name}</Title>
+        </CardTitle>
         <CardDescription className="text-sm leading-relaxed">{recipe.description}</CardDescription>
         <div className="flex flex-wrap gap-1.5 pt-2">
           {recipe.scenes.map((scene) => (
@@ -130,14 +152,26 @@ export function RecipeDetail({ recipe }: { recipe: Recipe }) {
           {copied ? <Check /> : <Copy />}
           {copied ? "Copied" : "Copy settings"}
         </Button>
-        <Button
-          variant="ghost"
-          render={<a href={recipe.sourceUrl} target="_blank" rel="noopener noreferrer" />}
-          nativeButton={false}
-        >
-          View on FujiRecipes
-          <ExternalLink />
-        </Button>
+        <div className="flex flex-wrap gap-2">
+          {showPageLink && (
+            <Button
+              variant="outline"
+              render={<Link href={`/recipes/${recipe.slug}`} />}
+              nativeButton={false}
+            >
+              Trang chi tiết
+              <ArrowRight />
+            </Button>
+          )}
+          <Button
+            variant="ghost"
+            render={<a href={recipe.sourceUrl} target="_blank" rel="noopener noreferrer" />}
+            nativeButton={false}
+          >
+            View on FujiRecipes
+            <ExternalLink />
+          </Button>
+        </div>
       </CardFooter>
     </Card>
   );

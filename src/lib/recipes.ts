@@ -45,6 +45,38 @@ export function findScene(slug: string | null | undefined) {
   return slug ? scenes.find((s) => s.slug === slug) : undefined;
 }
 
+export function findRecipe(slug: string) {
+  return recipes.find((r) => r.slug === slug);
+}
+
+export function filmSimulationOf(recipe: Recipe) {
+  return recipe.settings.find((s) => s.name === "Film Simulation")?.value;
+}
+
+/** Every film simulation used by at least one recipe, A→Z. */
+export const filmSimulations = [
+  ...new Set(recipes.map(filmSimulationOf).filter((v): v is string => !!v)),
+].sort((a, b) => a.localeCompare(b));
+
+export type RecipeFilters = {
+  query?: string;
+  scene?: string;
+  filmSimulation?: string;
+};
+
+const normalize = (s: string) =>
+  s.normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/đ/gi, "d").toLowerCase();
+
+/** Filters for the catalog page; the text query matches name, film stock and description. */
+export function filterRecipes({ query, scene, filmSimulation }: RecipeFilters) {
+  const q = query ? normalize(query.trim()) : "";
+  return recipesInScene(scene).filter((r) => {
+    if (filmSimulation && filmSimulationOf(r) !== filmSimulation) return false;
+    if (!q) return true;
+    return normalize(`${r.name} ${r.emulates} ${r.description} ${r.scenes.join(" ")}`).includes(q);
+  });
+}
+
 /** Recipes in a scene category, or every recipe when no scene is given. */
 export function recipesInScene(sceneSlug?: string) {
   return sceneSlug ? recipes.filter((r) => r.categories.includes(sceneSlug)) : recipes;

@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { CloudSun, Shuffle, Sparkles } from "lucide-react";
 
+import { FilterChip } from "@/components/filter-chip";
 import { RecipeDetail } from "@/components/recipe-detail";
 import { RecipePickCard } from "@/components/recipe-pick-card";
 import { WeatherPanel } from "@/components/weather-panel";
@@ -16,29 +17,6 @@ import { recommend, weatherProfile } from "@/lib/recommend";
 const PICK_COUNT = 3;
 
 type Mode = "weather" | "random";
-
-function FilterChip({
-  active,
-  onClick,
-  children,
-}: {
-  active: boolean;
-  onClick: () => void;
-  children: React.ReactNode;
-}) {
-  return (
-    <Button
-      role="radio"
-      aria-checked={active}
-      size="sm"
-      variant={active ? "default" : "outline"}
-      className="rounded-full"
-      onClick={onClick}
-    >
-      {children}
-    </Button>
-  );
-}
 
 function syncUrl(sceneSlug?: string, recipeSlug?: string) {
   const params = new URLSearchParams();
@@ -237,7 +215,7 @@ export function RecipeExplorer({
       {selected && (
         <section ref={detailRef} className="flex scroll-mt-4 flex-col gap-3">
           <h2 className="text-sm font-medium text-muted-foreground">Chi tiết recipe</h2>
-          <RecipeDetail key={selected.slug} recipe={selected} />
+          <RecipeDetail key={selected.slug} recipe={selected} showPageLink />
         </section>
       )}
     </div>
