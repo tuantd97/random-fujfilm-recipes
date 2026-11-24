@@ -1,27 +1,23 @@
 import { Suspense } from "react";
 import { Aperture } from "lucide-react";
-import { connection } from "next/server";
 
-import { RecipeRandomizer } from "@/components/recipe-randomizer";
+import { RecipeExplorer } from "@/components/recipe-explorer";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { findScene, pickRandom, recipes, recipesInScene } from "@/lib/recipes";
+import { findScene, recipes } from "@/lib/recipes";
 
-async function RandomRecipe({ searchParams }: { searchParams: PageProps<"/">["searchParams"] }) {
+async function Explorer({ searchParams }: { searchParams: PageProps<"/">["searchParams"] }) {
   const { r, scene } = await searchParams;
   const initialScene = findScene(typeof scene === "string" ? scene : undefined);
-  const pool = recipesInScene(initialScene?.slug);
-  const requested = typeof r === "string" ? pool.find((x) => x.slug === r) : undefined;
-  // Random pick must happen per request, not at prerender time.
-  await connection();
-  const initial = requested ?? pickRandom(pool);
-  return <RecipeRandomizer initialSlug={initial.slug} initialScene={initialScene?.slug} />;
+  const initialRecipe = typeof r === "string" ? recipes.find((x) => x.slug === r) : undefined;
+  return <RecipeExplorer initialSlug={initialRecipe?.slug} initialScene={initialScene?.slug} />;
 }
 
-function RecipeSkeleton() {
+function ExplorerSkeleton() {
   return (
-    <div className="flex w-full flex-col items-center gap-6">
-      <div className="h-11 w-44 animate-pulse rounded-lg bg-muted" />
-      <div className="h-[36rem] w-full animate-pulse rounded-xl bg-muted" />
+    <div className="flex w-full flex-col gap-6">
+      <div className="h-64 w-full animate-pulse rounded-xl bg-muted" />
+      <div className="h-20 w-full animate-pulse rounded-xl bg-muted" />
+      <div className="h-40 w-full animate-pulse rounded-xl bg-muted" />
     </div>
   );
 }
@@ -37,19 +33,17 @@ export default function Home({ searchParams }: PageProps<"/">) {
         <ThemeToggle />
       </header>
 
-      <main className="mx-auto flex w-full max-w-3xl flex-1 flex-col items-center gap-8 px-4 py-6 sm:py-10">
-        <div className="text-center">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Không biết chụp recipe nào?
-          </h1>
-          <p className="mt-2 text-muted-foreground">
-            Bốc ngẫu nhiên 1 trong {recipes.length} Fujifilm film simulation recipes, hoặc lọc
-            theo điều kiện chụp.
+      <main className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-6 px-4 py-4 sm:py-8">
+        <div>
+          <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Hôm nay chụp recipe nào?</h1>
+          <p className="mt-1 text-muted-foreground">
+            Gợi ý 3 trong {recipes.length} Fujifilm film simulation recipes theo thời tiết nơi bạn
+            đang đứng, hoặc bốc ngẫu nhiên.
           </p>
         </div>
 
-        <Suspense fallback={<RecipeSkeleton />}>
-          <RandomRecipe searchParams={searchParams} />
+        <Suspense fallback={<ExplorerSkeleton />}>
+          <Explorer searchParams={searchParams} />
         </Suspense>
       </main>
 
@@ -62,6 +56,24 @@ export default function Home({ searchParams }: PageProps<"/">) {
           className="underline underline-offset-4 hover:text-foreground"
         >
           fujirecipes.io
+        </a>
+        . Weather by{" "}
+        <a
+          href="https://open-meteo.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-4 hover:text-foreground"
+        >
+          Open-Meteo
+        </a>
+        , place names by{" "}
+        <a
+          href="https://www.bigdatacloud.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-4 hover:text-foreground"
+        >
+          BigDataCloud
         </a>
         . Not affiliated with Fujifilm.
       </footer>

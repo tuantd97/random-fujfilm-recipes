@@ -1,14 +1,32 @@
 # Random Fuji Recipe
 
-A web app that picks a random Fujifilm film simulation recipe. The data comes from [fujirecipes.io/recipes](https://fujirecipes.io/recipes).
+A web app that suggests Fujifilm film simulation recipes based on the weather where you are, or picks them at random. The data comes from [fujirecipes.io/recipes](https://fujirecipes.io/recipes).
 
 - Next.js 16 (App Router, TypeScript)
 - Tailwind CSS v4 + shadcn/ui
 - Light / Dark / System theme (next-themes)
-- Filter by shooting condition (the 8 scene categories from fujirecipes.io), then random within the filtered list
+- **Weather where you are**: temperature, feels-like, today's high/low, rainfall, chance of rain, humidity, wind, cloud cover, UV, sunrise/sunset and golden hour
+- **Top 3 recipes for the weather**, each with the reason it was suggested
+- Filter by shooting condition (the 8 scene categories from fujirecipes.io); both the suggestions and the random picks only use the filtered list
+- **Random** tab: draws 3 random recipes; press `Space` or `R` to draw again
 - Each recipe has its own shareable link: `/?r=<slug>` (with a filter: `/?scene=<scene>&r=<slug>`)
 - Shooting tips in Vietnamese for every recipe (`src/data/tips.json`)
-- Press `Space` or `R` to shuffle
+
+## Weather and location
+
+Everything runs in the browser and needs no API key:
+
+| Data | Source |
+| --- | --- |
+| Weather forecast | [Open-Meteo Forecast API](https://open-meteo.com/en/docs) |
+| Coordinates → city name | [BigDataCloud Reverse Geocoding (client-side, free)](https://www.bigdatacloud.com/free-api/free-reverse-geocode-to-city-api) |
+| City name → coordinates (manual search) | [Open-Meteo Geocoding API](https://open-meteo.com/en/docs/geocoding-api) |
+
+- Open-Meteo only works with coordinates, so the city name comes from BigDataCloud's reverse geocoding. If that service fails, the app shows the coordinates and the weather still loads.
+- Weather is fetched when the page loads and when you press **Làm mới**.
+- If location access is denied, a city search box appears. The city you pick is remembered in `localStorage` and used next time; press **Vị trí của tôi** to switch back to GPS.
+- The browser only allows location access on HTTPS or `localhost`. That's fine on Vercel.
+- Recommendation logic: `src/lib/recommend.ts` (weather → weighted signals that match recipe categories and tags).
 
 ## Requirements
 

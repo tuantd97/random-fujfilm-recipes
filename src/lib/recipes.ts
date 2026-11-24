@@ -70,9 +70,23 @@ export function groupSettings(settings: RecipeSetting[]) {
   return groups.filter((g) => g.settings.length > 0);
 }
 
-export function pickRandom(from: Recipe[] = recipes, excludeSlug?: string): Recipe {
-  const pool = from.length > 1 ? from.filter((r) => r.slug !== excludeSlug) : from;
-  return pool[Math.floor(Math.random() * pool.length)];
+function shuffled<T>(items: T[]): T[] {
+  const copy = [...items];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+/**
+ * Picks `count` distinct random recipes, preferring ones not in `avoid`
+ * (the previous draw) so a re-roll actually shows something new.
+ */
+export function pickRandomSet(from: Recipe[], count: number, avoid: string[] = []): Recipe[] {
+  const fresh = shuffled(from.filter((r) => !avoid.includes(r.slug)));
+  const seen = shuffled(from.filter((r) => avoid.includes(r.slug)));
+  return [...fresh, ...seen].slice(0, count);
 }
 
 export function settingsToText(recipe: Recipe) {
