@@ -1,9 +1,10 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { CloudSun, Shuffle, Sparkles } from "lucide-react";
+import { CalendarClock, CloudSun, Shuffle, Sparkles } from "lucide-react";
 
 import { FilterChip } from "@/components/filter-chip";
+import { ForecastHighlights, ForecastOutlook, slotElementId } from "@/components/forecast-outlook";
 import { RecipeDetail } from "@/components/recipe-detail";
 import { RecipePickCard } from "@/components/recipe-pick-card";
 import { WeatherPanel } from "@/components/weather-panel";
@@ -12,11 +13,12 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useWeather } from "@/hooks/use-weather";
 import { findScene, pickRandomSet, recipes, recipesInScene, scenes, type Recipe } from "@/lib/recipes";
+import { forecastHighlights, forecastSlots, OUTLOOK_HOURS } from "@/lib/forecast-slots";
 import { recommend, weatherProfile } from "@/lib/recommend";
 
 const PICK_COUNT = 3;
 
-type Mode = "weather" | "random";
+type Mode = "now" | "forecast" | "random";
 
 function syncUrl(sceneSlug?: string, recipeSlug?: string) {
   const params = new URLSearchParams();
@@ -35,11 +37,12 @@ export function RecipeExplorer({
 }) {
   const weather = useWeather();
   const [scene, setScene] = useState<string | undefined>(initialScene);
-  const [mode, setMode] = useState<Mode>("weather");
+  const [mode, setMode] = useState<Mode>("now");
   const [randomPicks, setRandomPicks] = useState<Recipe[]>([]);
   // A recipe the user clicked (or opened via ?r=). Undefined = show the first card.
   const [selectedSlug, setSelectedSlug] = useState<string | undefined>(initialSlug);
   const [rolls, setRolls] = useState(0);
+  const [flashSlot, setFlashSlot] = useState<number>();
   const detailRef = useRef<HTMLElement>(null);
 
   const pool = recipesInScene(scene);
@@ -57,7 +60,27 @@ export function RecipeExplorer({
     [profile, weather.weather, scene],
   );
 
-  const list = mode === "weather" ? recommendations.map((r) => r.recipe) : randomPicks;
+  const slots = useMemo(
+    () => (weather.weather ? forecastSlots(weather.weather) : []),
+    [weather.weather],
+  );
+  const slotRecommendations = useMemo(
+    () =>
+      weather.weather
+        ? slots.map((slot) =>
+            recommend(recipesInScene(scene), slot.profile, weather.weather!.time.slice(0, 10), PICK_COUNT),
+          )
+        : [],
+    [slots, weather.weather, scene],
+  );
+  const highlights = useMemo(() => forecastHighlights(slots), [slots]);
+
+  const list =
+    mode === "now"
+      ? recommendations.map((r) => r.recipe)
+      : mode === "forecast"
+        ? (slotRecommendations[0] ?? []).map((r) => r.recipe)
+        : randomPicks;
   const selected =
     recipes.find((r) => r.slug === selectedSlug) ?? (list.length > 0 ? list[0] : undefined);
 
@@ -76,6 +99,22 @@ export function RecipeExplorer({
     setSelectedSlug(undefined);
     syncUrl(scene);
     if (next === "random" && randomPicks.length === 0) roll(scene, []);
+  }
+
+  function openSlot(index: number) {
+    if (mode !== "forecast") changeMode("forecast");
+    // Show the recipe the heads-up recommended, not the first pick of "now".
+    const top = slotRecommendations[index]?.[0]?.recipe;
+    if (top) {
+      setSelectedSlug(top.slug);
+      syncUrl(scene, top.slug);
+    }
+    setFlashSlot(index);
+    // Wait for the tab panel to render before scrolling to the slot.
+    setTimeout(() => {
+      document.getElementById(slotElementId(index))?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 50);
+    setTimeout(() => setFlashSlot(undefined), 1600);
   }
 
   function selectScene(sceneSlug?: string) {
@@ -116,6 +155,13 @@ export function RecipeExplorer({
     <div className="flex w-full flex-col gap-6">
       <WeatherPanel weather={weather} />
 
+      <ForecastHighlights
+        highlights={highlights}
+        slots={slots}
+        recommendations={slotRecommendations}
+        onOpen={openSlot}
+      />
+
       <section className="flex flex-col gap-3">
         <h2 className="text-sm font-medium text-muted-foreground">Lọc theo điều kiện chụp</h2>
         <div role="radiogroup" aria-label="Lọc theo điều kiện chụp" className="flex flex-wrap gap-2">
@@ -132,15 +178,18 @@ export function RecipeExplorer({
 
       <Tabs value={mode} onValueChange={(value) => changeMode(value as Mode)} className="gap-4">
         <TabsList className="w-full sm:w-fit">
-          <TabsTrigger value="weather" className="px-3">
-            <CloudSun /> Gợi ý theo thời tiết
+          <TabsTrigger value="now" className="px-3">
+            <CloudSun /> Bây giờ
+          </TabsTrigger>
+          <TabsTrigger value="forecast" className="px-3">
+            <CalendarClock /> {OUTLOOK_HOURS} giờ tới
           </TabsTrigger>
           <TabsTrigger value="random" className="px-3">
             <Shuffle /> Ngẫu nhiên
           </TabsTrigger>
         </TabsList>
 
-        <TabsContent value="weather" className="flex flex-col gap-3">
+        <TabsContent value="now" className="flex flex-col gap-3">
           <p className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground">
             <Sparkles className="size-4 text-amber-500" />
             {profile ? (
@@ -183,6 +232,28 @@ export function RecipeExplorer({
           )}
         </TabsContent>
 
+        <TabsContent value="forecast" className="flex flex-col gap-4">
+          <p className="flex gap-2 text-sm text-muted-foreground">
+            <CalendarClock className="mt-0.5 size-4 shrink-0 text-amber-500" />
+            {slots.length > 0
+              ? `Ánh sáng ${OUTLOOK_HOURS} giờ tới theo dự báo, mỗi khung kèm top ${PICK_COUNT} trong ${pool.length} recipes${activeScene ? ` của ${activeScene.name}` : ""}.`
+              : weather.status === "loading"
+                ? "Đang đọc dự báo theo giờ…"
+                : "Cần thời tiết để xem dự báo. Chọn vị trí ở trên."}
+          </p>
+          {slots.length > 0 ? (
+            <ForecastOutlook
+              slots={slots}
+              recommendations={slotRecommendations}
+              selectedSlug={selected?.slug}
+              flashIndex={flashSlot}
+              onSelect={selectRecipe}
+            />
+          ) : (
+            weather.status === "loading" && <Skeleton className="h-64 rounded-xl" />
+          )}
+        </TabsContent>
+
         <TabsContent value="random" className="flex flex-col gap-3">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <p className="text-sm text-muted-foreground">
@@ -213,7 +284,7 @@ export function RecipeExplorer({
       </Tabs>
 
       {selected && (
-        <section ref={detailRef} className="flex scroll-mt-4 flex-col gap-3">
+        <section ref={detailRef} className="flex scroll-mt-20 flex-col gap-3">
           <h2 className="text-sm font-medium text-muted-foreground">Chi tiết recipe</h2>
           <RecipeDetail key={selected.slug} recipe={selected} showPageLink />
         </section>

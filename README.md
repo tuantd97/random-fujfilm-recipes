@@ -7,6 +7,7 @@ A web app that suggests Fujifilm film simulation recipes based on the weather wh
 - Light / Dark / System theme (next-themes)
 - **Weather where you are**: temperature, feels-like, today's high/low, rainfall, chance of rain, humidity, wind, cloud cover, UV, sunrise/sunset and golden hour
 - **Top 3 recipes for the weather**, each with the reason it was suggested
+- **12 giờ tới** tab: the hourly forecast is split into light slots (night / golden hour / day × sky), each with its own top 3; heads-ups under the weather card for sunny golden hours, incoming rain and clearing rain (`src/lib/forecast-slots.ts`)
 - Filter by shooting condition (the 8 scene categories from fujirecipes.io); both the suggestions and the random picks only use the filtered list
 - **Random** tab: draws 3 random recipes; press `Space` or `R` to draw again
 - **`/recipes`**: the full list of recipes with filters (search by name/film/description, scene category, film simulation); filters live in the URL

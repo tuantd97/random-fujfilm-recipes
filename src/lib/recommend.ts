@@ -131,20 +131,29 @@ function phaseSignals(phase: LightPhase, sky: Sky): Signal[] {
   }
 }
 
-export function weatherProfile(weather: Weather): WeatherProfile {
-  const phase = lightPhase(weather);
-  const sky = skyFromCode(weather.weatherCode, weather.cloudCover);
-  const harshSun = phase === "day" && sky === "clear" && weather.uvIndex >= 6;
+export type LightConditions = Pick<WeatherProfile, "phase" | "sky" | "harshSun">;
+
+/** Weighted signals for a light situation: now, or any slot of the hourly outlook. */
+export function profileFor({ phase, sky, harshSun }: LightConditions): WeatherProfile {
   const skyLabel =
     harshSun ? "Nắng gắt" : sky === "clear" && phase === "night" ? "Trời quang" : SKY_LABEL[sky];
-  const parts = [PHASE_LABEL[phase], skyLabel];
   return {
     phase,
     sky,
     harshSun,
-    summary: parts.join(" · "),
+    summary: `${PHASE_LABEL[phase]} · ${skyLabel}`,
     signals: [...phaseSignals(phase, sky), ...skySignals(sky, phase, harshSun)],
   };
+}
+
+export function isHarshSun(phase: LightPhase, sky: Sky, uvIndex: number) {
+  return phase === "day" && sky === "clear" && uvIndex >= 6;
+}
+
+export function weatherProfile(weather: Weather): WeatherProfile {
+  const phase = lightPhase(weather);
+  const sky = skyFromCode(weather.weatherCode, weather.cloudCover);
+  return profileFor({ phase, sky, harshSun: isHarshSun(phase, sky, weather.uvIndex) });
 }
 
 function recipeKeys(recipe: Recipe) {

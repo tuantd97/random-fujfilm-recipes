@@ -40,7 +40,7 @@ import {
 
 type WeatherHook = ReturnType<typeof useWeather>;
 
-function SkyIcon({ sky, isDay, className }: { sky: Sky; isDay: boolean; className?: string }) {
+export function SkyIcon({ sky, isDay, className }: { sky: Sky; isDay: boolean; className?: string }) {
   const props = { className, strokeWidth: 1.5 };
   switch (sky) {
     case "clear":

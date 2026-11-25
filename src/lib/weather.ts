@@ -12,6 +12,20 @@ export type Place = {
   source: "gps" | "search";
 };
 
+export type HourlyPoint = {
+  /** Local wall-clock hour, e.g. "2026-11-25T17:00". */
+  time: string;
+  temperature: number;
+  weatherCode: number;
+  cloudCover: number;
+  precipitation: number;
+  precipitationProbability: number | null;
+  uvIndex: number;
+  isDay: boolean;
+};
+
+export type SunTimes = { sunrise: string; sunset: string };
+
 export type Weather = {
   /** Local time at the place, as returned by Open-Meteo (no offset). */
   time: string;
@@ -34,6 +48,9 @@ export type Weather = {
     sunset: string;
     uvIndexMax: number;
   };
+  /** Today and tomorrow, so the 12-hour outlook can cross midnight. */
+  days: SunTimes[];
+  hourly: HourlyPoint[];
 };
 
 const CURRENT_FIELDS = [
@@ -46,6 +63,16 @@ const CURRENT_FIELDS = [
   "wind_speed_10m",
   "is_day",
   "uv_index",
+];
+
+const HOURLY_FIELDS = [
+  "temperature_2m",
+  "weather_code",
+  "cloud_cover",
+  "precipitation",
+  "precipitation_probability",
+  "uv_index",
+  "is_day",
 ];
 
 const DAILY_FIELDS = [
@@ -74,15 +101,17 @@ export async function fetchWeather(
     latitude: latitude.toFixed(4),
     longitude: longitude.toFixed(4),
     current: CURRENT_FIELDS.join(","),
+    hourly: HOURLY_FIELDS.join(","),
     daily: DAILY_FIELDS.join(","),
     timezone: "auto",
-    forecast_days: "1",
+    forecast_days: "2",
   });
   type Response = {
     current: Record<string, number> & { time: string };
+    hourly: Record<string, (number | string | null)[]>;
     daily: Record<string, (number | string | null)[]>;
   };
-  const { current: c, daily: d } = await getJson<Response>(
+  const { current: c, hourly: h, daily: d } = await getJson<Response>(
     `https://api.open-meteo.com/v1/forecast?${params}`,
     signal,
   );
@@ -108,6 +137,20 @@ export async function fetchWeather(
       sunset: day("sunset") as string,
       uvIndexMax: day("uv_index_max") as number,
     },
+    days: (d.sunrise ?? []).map((sunrise, i) => ({
+      sunrise: sunrise as string,
+      sunset: d.sunset[i] as string,
+    })),
+    hourly: (h.time ?? []).map((time, i) => ({
+      time: time as string,
+      temperature: h.temperature_2m[i] as number,
+      weatherCode: h.weather_code[i] as number,
+      cloudCover: h.cloud_cover[i] as number,
+      precipitation: h.precipitation[i] as number,
+      precipitationProbability: (h.precipitation_probability[i] as number | null) ?? null,
+      uvIndex: (h.uv_index[i] as number | null) ?? 0,
+      isDay: h.is_day[i] === 1,
+    })),
   };
 }
 
